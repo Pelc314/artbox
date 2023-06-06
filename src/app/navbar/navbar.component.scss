@@ -1,13 +1,16 @@
 // style.scss
-ul {
-display: flex;
-justify-content: space-evenly;    
-    button {
-      display: inline-block;
-      color: blue;
-      &:hover {
-        color: red;
-      }
-    }
-  }
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  // font-family: ; to do
+}
+
+.container > *:first-child {
+  position: absolute;
+  left: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+ 
   
