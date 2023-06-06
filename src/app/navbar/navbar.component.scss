@@ -1,0 +1,13 @@
+// style.scss
+ul {
+display: flex;
+justify-content: space-evenly;    
+    button {
+      display: inline-block;
+      color: blue;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  
