@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import {MatDividerModule} from '@angular/material/divider';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 import { AppRoutingModule } from './app-routing.module';
