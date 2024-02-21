@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-
+  handleArtystyczneOprawy(): void {
+    console.log('artystyczne oprawy clicked');
+  }
 }
