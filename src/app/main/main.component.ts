@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+imports: [RouterOutlet]
 
 @Component({
   selector: 'app-main',
@@ -7,5 +8,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
-subpages = ['homepage','subpage1'];
+subpages = ['homepage','artystyczneoprawy'];
 }

@@ -5,10 +5,9 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ArtystyczneObrazyComponent } from './artystyczne-obrazy/artystyczne-obrazy.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/main', pathMatch: 'full' },
   { path: 'main', component: MainComponent },
   { path: 'homepage', component: HomePageComponent },
-  { path: 'subpage1', component: ArtystyczneObrazyComponent }
+  { path: 'artystyczneoprawy', component: ArtystyczneObrazyComponent }
 ];
 
 @NgModule({
@@ -16,3 +15,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export { routes };
+

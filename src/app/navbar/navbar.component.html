@@ -1,7 +1,8 @@
 <ul class="container">
-    <p>artbox</p>
-    <button mat-button (click)="handleArtystyczneOprawy() ">Artystyczne oprawy obrazów</button>
-    <button mat-button>Usługi pozłotnicze</button>
-    <button mat-button>Wernisaże</button>
-    <button mat-button>Kontakt</button>
-  </ul>
+  <p routerLink="/homepage">ArtBox</p>
+  <button mat-button routerLink="/artystyczneoprawy" (click)="handleArtystyczneOprawy()  ">Artystyczne oprawy
+    obrazów</button>
+  <button mat-button>Usługi pozłotnicze</button>
+  <button mat-button>Wernisaże</button>
+  <button mat-button>Kontakt</button>
+</ul>

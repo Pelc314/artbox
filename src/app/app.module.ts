@@ -11,6 +11,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ArtystyczneObrazyComponent } from './artystyczne-obrazy/artystyczne-obrazy.component';
 import { MainComponent } from './main/main.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { provideRouter } from '@angular/router';
+import {routes} from './app-routing.module'
 
 @NgModule({
   declarations: [
@@ -29,7 +31,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatCardModule,
     MatDividerModule
   ],
-  providers: [],
+  providers: [provideRouter(routes)],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
