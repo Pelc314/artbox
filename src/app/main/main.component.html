@@ -1,0 +1,8 @@
+<!-- main.component.html -->
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="subpage" *ngFor="let subpage of subpages">
+        <a [routerLink]="['/', subpage]">{{ subpage }}</a>
+    </div>
+  </div>
+  <footer>FOOTER</footer>
