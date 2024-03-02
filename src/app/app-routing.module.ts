@@ -5,6 +5,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ArtystyczneObrazyComponent } from './artystyczne-obrazy/artystyczne-obrazy.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'homepage', pathMatch: 'full' },
   { path: 'main', component: MainComponent },
   { path: 'homepage', component: HomePageComponent },
   { path: 'artystyczneoprawy', component: ArtystyczneObrazyComponent }
