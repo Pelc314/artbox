@@ -1,5 +1,84 @@
-.round-image{
- border-radius: 50%;
- width: 200px;
- height: auto;
+.round-image {
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+}
+
+.plotno {
+    position: absolute;
+    width: 246.62px;
+    height: 278.59px;
+    left: 145px;
+    top: 550px;
+    transform: rotate(-10deg);
+    /* Rotate 90 degrees clockwise */
+    opacity: 70%;
+}
+
+.doggy {
+    position: absolute;
+    width: 244.73px;
+    height: 277.07px;
+    left: 316px;
+    top: 550px;
+    transform: rotate(10deg);
+    /* Rotate 90 degrees clockwise */
+    opacity: 70%;
+}
+
+.title {
+    /* Artystyczne zlecenia i usługi. Tworzone z pasją. */
+    width: 437px;
+    height: 180px;
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.button {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    cursor: pointer;
+    letter-spacing: 0.2px;
+    width: 339px;
+    height: 62px;
+
+    background: #FFEEA1;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.abstract1 {
+    width: 527px;
+    height: 709px;
+    opacity: 40%;
+}
+
+.abstract2 {
+    width: 527px;
+    height: 709px;
+
+    opacity: 40%;
 }

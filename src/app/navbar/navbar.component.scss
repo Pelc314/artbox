@@ -1,8 +1,6 @@
-// style.scss
 .container {
   display: flex;
   justify-content: space-evenly;
-  // font-family: ; to do
 }
 
 .container>*:first-child {
@@ -19,22 +17,15 @@
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  // line-height: 37px;
-  // display: flex;
-  // align-items: center;
   color: #000000;
   cursor: pointer;
 }
 
 .nav-button {
-// width: 258px;
-// height: 27px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-// line-height: 27px;
-/* identical to box height */
-color: #000000;
-letter-spacing: 0.1px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 0.1px;
 }
