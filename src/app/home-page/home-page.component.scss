@@ -15,6 +15,11 @@
     opacity: 70%;
 }
 
+.left-div {
+    /* Set the width of the div */
+    padding: 20px;
+}
+
 .doggy {
     position: absolute;
     width: 244.73px;
@@ -51,7 +56,6 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
-
     font-family: 'Red Rose';
     font-style: normal;
     font-weight: 400;
@@ -74,11 +78,19 @@
     width: 527px;
     height: 709px;
     opacity: 40%;
+    margin-right: -50%;
+    float: right;
+    filter: brightness(250%);
 }
 
+
+
 .abstract2 {
+    filter: brightness(250%);
     width: 527px;
     height: 709px;
-
     opacity: 40%;
+    float: right;
+    margin-right: -20%;
+    overflow: hidden;
 }
