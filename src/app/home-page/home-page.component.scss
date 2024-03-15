@@ -1,9 +1,3 @@
-.round-image {
-    border-radius: 50%;
-    width: 200px;
-    height: auto;
-}
-
 .plotno {
     position: absolute;
     width: 14rem;
@@ -15,9 +9,13 @@
     opacity: 70%;
 }
 
-.left-padding {
+.padding-divider {
     /* Set the width of the div */
-    padding: 20px;
+    margin: 2rem 6rem 2rem 6rem;
+}
+
+.table-style {
+    margin: 0rem 6rem 0rem 6rem;
 }
 
 .doggy {
@@ -87,4 +85,15 @@
     float: right;
     margin-right: -20%;
     overflow: hidden;
+}
+
+.pastel-style {
+    width: 16rem;
+    height: 22rem;
+}
+
+.round-image {
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
 }
