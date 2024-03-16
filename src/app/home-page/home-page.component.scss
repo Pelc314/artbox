@@ -5,17 +5,16 @@
     left: 16rem;
     top: 27rem;
     transform: rotate(-10deg);
-    /* Rotate 90 degrees clockwise */
     opacity: 70%;
 }
 
 .padding-divider {
-    /* Set the width of the div */
     margin: 2rem 6rem 2rem 6rem;
 }
 
 .table-style {
     margin: 0rem 6rem 0rem 6rem;
+    background-color: beige;
 }
 
 .doggy {
@@ -25,12 +24,10 @@
     left: 28rem;
     top: 27rem;
     transform: rotate(10deg);
-    /* Rotate 90 degrees clockwise */
     opacity: 70%;
 }
 
 .title {
-    /* Artystyczne zlecenia i usługi. Tworzone z pasją. */
     font-family: 'Red Rose';
     font-style: normal;
     font-weight: 400;
@@ -40,14 +37,9 @@
     position: relative;
     left: 14rem;
     top: -8rem;
-    // margin-left: 60%;
-    // float: left;
-    // margin-bottom: 50%;
-
 }
 
 .button {
-    /* Auto layout */
     font-family: 'Red Rose';
     font-style: normal;
     font-weight: 400;
@@ -56,14 +48,21 @@
     letter-spacing: 0.2px;
     width: 18rem;
     height: 4rem;
+    background: #FFEEA1;
+}
+
+.first-button {
     left: 14rem;
     top: -7rem;
-    // margin-left: 60%;
-    // float: left;
-    // margin-top: -40%;
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    cursor: pointer;
+    letter-spacing: 0.2px;
+    width: 18rem;
+    height: 4rem;
     background: #FFEEA1;
-
-
 }
 
 .abstract1 {
@@ -74,8 +73,6 @@
     float: right;
     filter: brightness(250%);
 }
-
-
 
 .abstract2 {
     filter: brightness(250%);
@@ -96,4 +93,13 @@
     border-radius: 50%;
     width: 200px;
     height: auto;
+}
+
+.segment-heading{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0.1px;
 }
