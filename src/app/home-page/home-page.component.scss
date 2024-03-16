@@ -9,12 +9,17 @@
 }
 
 .padding-divider {
-    margin: 2rem 6rem 2rem 6rem;
+    margin: 2rem 14rem 2rem 14rem;
 }
 
 .table-style {
+    height: 20rem;
+    margin: 0rem 8rem 0rem 6rem;
+}
+
+.inner-table-style {
+    height: 15rem;
     margin: 0rem 6rem 0rem 6rem;
-    background-color: beige;
 }
 
 .doggy {
@@ -87,19 +92,36 @@
 .pastel-style {
     width: 16rem;
     height: 22rem;
+    margin: 0rem 6rem 0rem 8rem;
 }
 
-.round-image {
+.pozlacanie1-style {
     border-radius: 50%;
-    width: 200px;
-    height: auto;
+    height: 22rem;
+    width: 20rem;
+    margin: 0rem 2rem 0rem 8rem;
 }
 
-.segment-heading{
+.segment-heading {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     color: #000000;
     letter-spacing: 0.1px;
+}
+
+.segment-body {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 32px;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.fish-style {
+    height: 20rem;
+    width: 20rem;
+    margin: 0rem 2rem 0rem 8rem;
 }
