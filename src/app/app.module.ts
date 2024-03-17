@@ -12,7 +12,8 @@ import { ArtystyczneObrazyComponent } from './artystyczne-obrazy/artystyczne-obr
 import { MainComponent } from './main/main.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { provideRouter } from '@angular/router';
-import {routes} from './app-routing.module'
+import {routes} from './app-routing.module';
+import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {routes} from './app-routing.module'
     NavbarComponent,
     HomePageComponent,
     ArtystyczneObrazyComponent,
-    MainComponent
+    MainComponent,
+    FooterComponent
   ],
   imports: [
     MatSnackBarModule,
