@@ -6,7 +6,7 @@
   cursor: pointer;
   margin-top: 0.5rem;
   padding-left: 14rem;
-  padding-right: 18rem;
+  padding-right: 30rem;
 }
 
 .nav-button {
@@ -17,4 +17,9 @@
   color: #000000;
   letter-spacing: 0.1px;
   margin-left: 4rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
 }

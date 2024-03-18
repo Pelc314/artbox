@@ -1,19 +1,15 @@
 <table>
   <td>
-    <p on
-      class="title"
-      routerLink="/homepage">artbox</p>
+    <p on class="title" routerLink="/homepage">artbox</p>
   </td>
-  <td><button mat-button
-      [ngClass]="'nav-button'"
-      routerLink="/artystyczneoprawy"
-      (click)="handleArtystyczneOprawy()  ">
-      Artystyczne oprawy obrazów
-    </button></td>
-  <td><button mat-button
-      [ngClass]="'nav-button'">Usługi pozłotnicze</button></td>
-  <td><button mat-button
-      [ngClass]="'nav-button'">Wernisaże</button></td>
-  <td> <button mat-button
-      [ngClass]="'nav-button'">Kontakt</button></td>
+  <td>
+    <ul class="container">
+      <button mat-button [ngClass]="'nav-button'" routerLink="/artystyczneoprawy"
+        (click)="handleArtystyczneOprawy()  ">Artystyczne oprawy
+        obrazów</button>
+      <button mat-button [ngClass]="'nav-button'">Usługi pozłotnicze</button>
+      <button mat-button [ngClass]="'nav-button'">Wernisaże</button>
+      <button mat-button [ngClass]="'nav-button'">Kontakt</button>
+    </ul>
+  </td>
 </table>
