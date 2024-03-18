@@ -1,19 +1,48 @@
 .title {
     font-family: "Bodoni Moda", serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 20px;
     color: #000000;
     cursor: pointer;
-    margin: 0rem 0rem 0rem 14rem;
+    margin: 1.5rem 0rem 0rem 14rem;
 }
 
 .table-style {
     margin: 1rem 0rem 0rem 13.68rem;
+    height: 10rem;
 }
 
 .footer-style {
     // background-color: #FCFBFB;
     background-color: #dd9b9b;
     padding-top: 1rem;
+    height: 15rem;
+}
+
+.heading {
+    font-family: "Poppins";
+    font-weight: 500;
+    size: 18px;
+    padding-bottom: 1rem;
+    margin: 2rem 6rem 2rem 6rem;
+}
+
+.text {
+    font-family: "Poppins";
+    font-weight: 400;
+    size: 18px;
+}
+
+.bold {
+    font-family: "Poppins";
+    font-weight: 500;
+    size: 18px;
+    letter-spacing: -0.5px;
+}
+
+.adres {
+    padding-right: 1rem;
+    padding-bottom: 5px;
+    width: 10rem;
 }
