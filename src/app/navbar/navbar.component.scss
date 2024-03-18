@@ -1,15 +1,12 @@
-.container {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .title {
   font-family: 'Bodoni Moda';
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   color: #000000;
   cursor: pointer;
   margin-top: 0.5rem;
+  padding-left: 14rem;
+  padding-right: 18rem;
 }
 
 .nav-button {
@@ -19,4 +16,5 @@
   font-size: 16px;
   color: #000000;
   letter-spacing: 0.1px;
+  margin-left: 4rem;
 }
