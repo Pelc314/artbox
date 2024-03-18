@@ -1,12 +1,19 @@
 .title {
-    font-family: 'Bodoni Moda';
+    font-family: "Bodoni Moda", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     color: #000000;
     cursor: pointer;
+    margin: 0rem 0rem 0rem 14rem;
+}
+
+.table-style {
+    margin: 1rem 0rem 0rem 13.68rem;
 }
 
 .footer-style {
-    background-color: #FCFBFB;
+    // background-color: #FCFBFB;
+    background-color: #dd9b9b;
+    padding-top: 1rem;
 }
