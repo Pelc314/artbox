@@ -1,12 +1,4 @@
-.plotno {
-    position: absolute;
-    width: 14rem;
-    height: 16rem;
-    left: 16rem;
-    top: 27rem;
-    transform: rotate(-10deg);
-    opacity: 70%;
-}
+
 
 .matdivider-style {
     margin: 2rem 14rem 2rem 14rem;
@@ -26,8 +18,18 @@
     margin: 0rem 6rem 0rem 6rem;
 }
 
+.plotno {
+    position: fixed;
+    width: 14rem;
+    height: 16rem;
+    left: 16rem;
+    top: 27rem;
+    transform: rotate(-10deg);
+    opacity: 70%;
+}
+
 .doggy {
-    position: absolute;
+    position: fixed;
     width: 14rem;
     height: 16rem;
     left: 28rem;
