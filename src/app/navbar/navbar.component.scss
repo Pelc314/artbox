@@ -1,25 +1,35 @@
 .title {
   font-family: 'Bodoni Moda';
   font-weight: 500;
-  font-size: 20px;
+  font-size: 24px;
   color: #000000;
   cursor: pointer;
   margin-top: 0.5rem;
   padding-left: 14rem;
-  padding-right: 30rem;
+  padding-right: 26rem;
 }
 
 .nav-button {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   color: #000000;
   letter-spacing: 0.1px;
   margin-left: 4rem;
 }
 
+.nav-kontakt-button {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0.1px;
+  margin-left: 4rem;
+  margin-right: 8rem;
+}
+
 .container {
   display: flex;
-  justify-content: space-evenly;
 }
