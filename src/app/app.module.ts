@@ -12,8 +12,10 @@ import { ArtystyczneObrazyComponent } from './artystyczne-obrazy/artystyczne-obr
 import { MainComponent } from './main/main.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { provideRouter } from '@angular/router';
-import {routes} from './app-routing.module';
+import { routes } from './app-routing.module';
 import { FooterComponent } from './footer/footer.component'
+import { ClipboardModule } from '@angular/cdk/clipboard';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { FooterComponent } from './footer/footer.component'
     BrowserAnimationsModule,
     MatButtonModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    ClipboardModule
   ],
   providers: [provideRouter(routes)],
   bootstrap: [AppComponent]

@@ -10,13 +10,15 @@
                     ul. Sempołowskiej 5 <br>
                     51-660 Wrocław
                 </p>
-                <span>
-                    Pokaż na mapie
-                </span>
-                <img src="assets/imgs/open_maps.png" alt="maps icon" style="width: 1.1rem; float: right;">
-                <p style="padding-top: 0.5rem;">
-                    &copy; 2024 artbox
-                </p>
+                <div style="cursor: pointer;" (click)="handleShowMap()">
+                    <span>
+                        Pokaż na mapie
+                    </span>
+                    <img src="assets/imgs/open_maps.png" alt="maps icon" style="width: 1.1rem; float: right;">
+                    <p style="padding-top: 0.5rem;">
+                        &copy; 2024 artbox
+                    </p>
+                </div>
             </ul>
         </td>
         <td style="padding-right: 10rem;">
@@ -24,7 +26,7 @@
                 <p class="heading">
                     Napisz do nas:
                 </p>
-                <p class="bold">
+                <p class="bold" style="cursor: pointer;">
                     biuro@artbox.com.pl
                 </p>
                 <p style="
@@ -32,10 +34,10 @@
                  ">
                     Lub zadzwoń:
                 </p>
-                <p class="bold" style="margin-bottom: 0.4rem;">
+                <p class="bold" style="margin-bottom: 0.4rem; cursor: pointer;" [cdkCopyToClipboard]="mobileNumber" (click)="handleClick()">
                     +48 604 912 792
                 </p>
-                <p class="bold">
+                <p class="bold" style="cursor: pointer;" [cdkCopyToClipboard]="phoneNumber" (click)="handleClick()">
                     (0 71) 345 22 22
                 </p>
             </ul>
