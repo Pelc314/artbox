@@ -1,43 +1,84 @@
-<mat-card>
-    <mat-card-header>
-        <mat-card-title>Artystyczne zlecenia i usługi. Tworzone z pasją.</mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" width="250"
-        alt="Photo of a Shiba Inu">
-    <button mat-button> Zobacz naszą ofertę</button>
-</mat-card>
-<br>
-<mat-divider></mat-divider>
-<mat-card>
-    <mat-card-header>
-        <mat-card-subtitle> Artystyczne oprawy obrazów </mat-card-subtitle>
-        <mat-card-title>Obrazy olejne, grafiki, akwarele, pastele, hafty, zdjęcia, lustra i wiele
-            innych.</mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" width="250"
-        alt="Photo of a Shiba Inu">
-    <button mat-button>Sprawdź więcej</button>
-</mat-card>
-<br>
-<mat-divider></mat-divider>
-<mat-card>
-    <mat-card-header>
-        <mat-card-subtitle> Usługi pozłotnicze </mat-card-subtitle>
-        <mat-card-title>Pełen zakres usług - w tym naprawa starych złoceń na ramach, rzeźbach i
-            meblach.</mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" width="250"
-        alt="Photo of a Shiba Inu">
-    <button mat-button>Sprawdź więcej</button>
-</mat-card>
-<br>
-<mat-divider></mat-divider>
-<mat-card>
-    <mat-card-header>
-        <mat-card-subtitle>Wernisaże </mat-card-subtitle>
-        <mat-card-title>Wystawy dla galerii i indywidualnych artystów.</mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" width="250"
-        alt="Photo of a Shiba Inu">
-    <button mat-button>Sprawdź więcej</button>
-</mat-card>
+<table class="title-segment-style">
+    <tr>
+        <td>
+            <div class="title">
+                Artystyczne zlecenia i usługi. Tworzone z pasją.
+            </div>
+            <div>
+                <button mat-button [ngClass]="'first-button'">Sprawdź naszą ofertę</button>
+            </div>
+            <div>
+                <td>
+                    <img class="plotno" src="assets/plotno.jpg" alt="plotno">
+                </td>
+                <td>
+                    <img class="doggy" src="assets/haft_doggy.jpg" alt="doggy">
+                </td>
+            </div>
+        </td>
+        <td>
+            <img class="abstract1" src="assets/abstract1.png">
+        </td>
+        <td>
+            <img class="abstract2" src="assets/abstract2.png">
+        </td>
+    </tr>
+</table>
+<mat-divider class="matdivider-style"></mat-divider>
+<table class="segment-style">
+    <tr>
+        <td><img class="pastel-style" src="assets/pastel.jpg"></td>
+        <td>
+            <table class="inner-segment-style">
+                <tr class="segment-heading">
+                    Artystyczne oprawy obrazów
+                </tr>
+                <tr class="segment-body">
+                    Obrazy olejne, grafiki, akwarele, pastele, hafty, zdjęcia, lustra i wiele innych.
+                </tr>
+                <tr>
+                    <button mat-button [ngClass]="'button'">Sprawdź więcej</button>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<mat-divider class="matdivider-style"></mat-divider>
+<table class="segment-style">
+    <tr>
+        <td><img class="pozlacanie1-style" src="assets/pozlacanie1.jpg"></td>
+        <td>
+            <table class="inner-segment-style">
+                <tr class="segment-heading">
+                    Usługi pozłotnicze
+                </tr>
+                <tr class="segment-body">
+                    Pełen zakres usług - w tym naprawa starych złoceń na ramach, rzeźbach i meblach.
+                </tr>
+                <tr>
+                    <button mat-button [ngClass]="'button'">Sprawdź więcej</button>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<mat-divider class="matdivider-style"></mat-divider>
+<table class="segment-style">
+    <tr>
+        <td><img class="fish-style" src="assets/fish.jpg"></td>
+        <td>
+            <table class="inner-segment-style">
+                <tr class="segment-heading">
+                    Wernisaże
+                </tr>
+                <tr class="segment-body">
+                    Wystawy dla galerii i indywidualnych artystów.
+                </tr>
+                <tr>
+                    <button mat-button [ngClass]="'button'">Sprawdź więcej</button>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<mat-divider class="bottom-matdivider-style"></mat-divider>
