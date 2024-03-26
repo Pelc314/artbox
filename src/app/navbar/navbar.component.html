@@ -1,15 +1,12 @@
-<table>
-  <td>
+<mat-toolbar style="background-color: white;">
+  <mat-toolbar-row>
     <p on class="title" routerLink="/homepage">artbox</p>
-  </td>
-  <td>
-    <ul class="container">
-      <button mat-button [ngClass]="'nav-button'" routerLink="/artystyczneoprawy"
-        (click)="handleArtystyczneOprawy()  ">Artystyczne oprawy
-        obrazów</button>
-      <button mat-button [ngClass]="'nav-button'">Usługi pozłotnicze</button>
-      <button mat-button [ngClass]="'nav-button'">Wernisaże</button>
-      <button mat-button [ngClass]="'nav-kontakt-button'">Kontakt</button>
-    </ul>
-  </td>
-</table>
+    <span style="flex: 1 1 auto;"></span>
+    <button mat-button [ngClass]="'nav-button'" routerLink="/artystyczneoprawy"
+      (click)="handleArtystyczneOprawy()  ">Artystyczne oprawy
+      obrazów</button>
+    <button mat-button [ngClass]="'nav-button'">Usługi pozłotnicze</button>
+    <button mat-button [ngClass]="'nav-button'">Wernisaże</button>
+    <button mat-button [ngClass]="'nav-kontakt-button'">Kontakt</button>
+  </mat-toolbar-row>
+</mat-toolbar>

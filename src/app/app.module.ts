@@ -15,7 +15,11 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app-routing.module';
 import { FooterComponent } from './footer/footer.component'
 import { ClipboardModule } from '@angular/cdk/clipboard';
-
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,12 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
     MatButtonModule,
     MatCardModule,
     MatDividerModule,
-    ClipboardModule
+    ClipboardModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    FlexLayoutModule
   ],
   providers: [provideRouter(routes)],
   bootstrap: [AppComponent]
