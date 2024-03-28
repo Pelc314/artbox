@@ -7,24 +7,55 @@ import { Breakpoints } from '@angular/cdk/layout';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  isLayoutHandsetPortrait = false;
+  isLayoutHandsetLandscape = false;
+  isLayoutLarge = false;
+  isLayoutMedium = false;
+
   constructor(private responsive: BreakpointObserver) {
 
   }
 
   ngOnInit() {
-    this.responsive.observe([Breakpoints.HandsetLandscape,
-    Breakpoints.HandsetPortrait, 
-    Breakpoints.Large])
+    this.responsive.observe([
+      Breakpoints.HandsetLandscape,
+      Breakpoints.HandsetPortrait,
+      Breakpoints.Large,
+      Breakpoints.Medium
+    ])
       .subscribe(result => {
         const layoutBreakpoints = result.breakpoints;
         if (layoutBreakpoints[Breakpoints.HandsetPortrait]) {
           console.log("screens matches handset portait ");
+          
+          this.isLayoutHandsetPortrait = true;
+          this.isLayoutHandsetLandscape = false;
+          this.isLayoutLarge = false;
+          this.isLayoutMedium = false;
         }
-        if (layoutBreakpoints[Breakpoints.HandsetLandscape]) {
+        else if (layoutBreakpoints[Breakpoints.HandsetLandscape]) {
           console.log("screens matches HandsetLandscape");
+
+          this.isLayoutHandsetPortrait = false;
+          this.isLayoutHandsetLandscape = true;
+          this.isLayoutLarge = false;
+          this.isLayoutMedium = false;
         }
-        if (layoutBreakpoints[Breakpoints.Large]) {
+        else if (layoutBreakpoints[Breakpoints.Large]) {
           console.log("screens matches Large ");
+
+          this.isLayoutHandsetPortrait = false;
+          this.isLayoutHandsetLandscape = false;
+          this.isLayoutLarge = true;
+          this.isLayoutMedium = false;
+        }
+        else if (layoutBreakpoints[Breakpoints.Medium]){
+          console.log("screens matches Medium ");
+
+          this.isLayoutHandsetPortrait = false;
+          this.isLayoutHandsetLandscape = false;
+          this.isLayoutLarge = false;
+          this.isLayoutMedium = true;
         }
       })
   }
