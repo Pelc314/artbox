@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout'
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -26,7 +27,7 @@ export class NavbarComponent implements OnInit {
         const layoutBreakpoints = result.breakpoints;
         if (layoutBreakpoints[Breakpoints.HandsetPortrait]) {
           console.log("screens matches handset portait ");
-          
+
           this.isLayoutHandsetPortrait = true;
           this.isLayoutHandsetLandscape = false;
           this.isLayoutLarge = false;
@@ -48,7 +49,7 @@ export class NavbarComponent implements OnInit {
           this.isLayoutLarge = true;
           this.isLayoutMedium = false;
         }
-        else if (layoutBreakpoints[Breakpoints.Medium]){
+        else if (layoutBreakpoints[Breakpoints.Medium]) {
           console.log("screens matches Medium ");
 
           this.isLayoutHandsetPortrait = false;
