@@ -34,7 +34,15 @@
 }
 
 .container.is-layout-handset-portrait {
+  display: none;
+}
+
+.container.is-layout-medium {
   padding-left: 0rem;
   padding-right: 0rem;
-  background-color: red;
+}
+
+.container.is-layout-handset-landscape {
+  padding-left: 0rem;
+  padding-right: 0rem;
 }

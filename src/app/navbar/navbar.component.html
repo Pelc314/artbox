@@ -1,4 +1,8 @@
-<mat-toolbar class="container" [ngClass]="{'is-layout-handset-portrait': isLayoutHandsetPortrait}">
+<mat-toolbar class="container" [ngClass]="{'is-layout-handset-portrait': isLayoutHandsetPortrait,
+  'is-layout-medium':isLayoutMedium,
+  'is-layout-handset-landscape':isLayoutHandsetLandscape,
+  
+}">
   <mat-toolbar-row>
     <p on class="title" routerLink="/homepage">artbox</p>
     <span style="flex: 1 1 auto;"></span>

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BreakpointObserver } from '@angular/cdk/layout'
-import { Breakpoints } from '@angular/cdk/layout';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout'
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
