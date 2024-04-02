@@ -1,63 +1,49 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Subscription } from 'rxjs';
+import { ResponsiveLayout } from '../services/responsiveLayout.service';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
-  isLayoutHandsetPortrait = false;
+export class NavbarComponent implements OnInit, OnDestroy {
+  subscriptionHandsetPortrait: Subscription = new Subscription;
+  subscriptionHandsetLandscape: Subscription = new Subscription;
+  subscriptionMedium: Subscription = new Subscription;
+  subscriptionLarge: Subscription = new Subscription;
+  isLayoutHandsetPortrait: boolean = false;
   isLayoutHandsetLandscape = false;
   isLayoutLarge = false;
   isLayoutMedium = false;
 
-  constructor(private responsive: BreakpointObserver) {
+  constructor(private readonly responsiveLayoutService: ResponsiveLayout) { }
 
+  ngOnInit(): void {
+    this.subscriptionHandsetPortrait = this.responsiveLayoutService.
+      isLayoutHandsetPortait$.subscribe(isLayoutHandsetPortrait => {
+        this.isLayoutHandsetPortrait = isLayoutHandsetPortrait;
+      });
+
+    this.subscriptionHandsetLandscape = this.responsiveLayoutService.
+      isLayoutHandsetLandscape$.subscribe(result => {
+        this.isLayoutHandsetLandscape = result;
+      });
+
+    this.subscriptionMedium = this.responsiveLayoutService.
+      isLayoutMedium$.subscribe(result => {
+        this.isLayoutMedium = result;
+      });
+
+    this.subscriptionLarge = this.responsiveLayoutService.
+      isLayoutLarge$.subscribe(result => {
+        this.isLayoutLarge = result;
+      });
   }
 
-  ngOnInit() {
-    this.responsive.observe([
-      Breakpoints.HandsetLandscape,
-      Breakpoints.HandsetPortrait,
-      Breakpoints.Large,
-      Breakpoints.Medium
-    ])
-      .subscribe(result => {
-        const layoutBreakpoints = result.breakpoints;
-        if (layoutBreakpoints[Breakpoints.HandsetPortrait]) {
-          console.log("screens matches handset portait ");
-
-          this.isLayoutHandsetPortrait = true;
-          this.isLayoutHandsetLandscape = false;
-          this.isLayoutLarge = false;
-          this.isLayoutMedium = false;
-        }
-        else if (layoutBreakpoints[Breakpoints.HandsetLandscape]) {
-          console.log("screens matches HandsetLandscape");
-
-          this.isLayoutHandsetPortrait = false;
-          this.isLayoutHandsetLandscape = true;
-          this.isLayoutLarge = false;
-          this.isLayoutMedium = false;
-        }
-        else if (layoutBreakpoints[Breakpoints.Large]) {
-          console.log("screens matches Large ");
-
-          this.isLayoutHandsetPortrait = false;
-          this.isLayoutHandsetLandscape = false;
-          this.isLayoutLarge = true;
-          this.isLayoutMedium = false;
-        }
-        else if (layoutBreakpoints[Breakpoints.Medium]) {
-          console.log("screens matches Medium ");
-
-          this.isLayoutHandsetPortrait = false;
-          this.isLayoutHandsetLandscape = false;
-          this.isLayoutLarge = false;
-          this.isLayoutMedium = true;
-        }
-      })
+  ngOnDestroy(): void {
+    this.subscriptionHandsetPortrait.unsubscribe();
   }
 
   handleArtystyczneOprawy() {
