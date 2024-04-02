@@ -43,6 +43,9 @@ export class NavbarComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.subscriptionHandsetPortrait.unsubscribe();
+    this.subscriptionHandsetLandscape.unsubscribe();
+    this.subscriptionMedium.unsubscribe();
+    this.subscriptionLarge.unsubscribe();
   }
 
   handleArtystyczneOprawy() {
