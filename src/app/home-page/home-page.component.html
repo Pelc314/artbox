@@ -1,4 +1,7 @@
-<table class="title-segment-style">
+<table class="title-segment-style" [ngClass]="{'is-layout-handset-portrait': isLayoutHandsetPortrait,
+'is-layout-medium':isLayoutMedium,
+'is-layout-handset-landscape':isLayoutHandsetLandscape
+}">
     <tr>
         <td>
             <div class="title">
@@ -8,19 +11,25 @@
                 <button mat-button [ngClass]="'first-button'">Sprawdź naszą ofertę</button>
             </div>
             <div>
-                <td>
-                    <img class="plotno" src="./assets/plotno.jpg" alt="plotno">
-                </td>
-                <td>
-                    <img class="doggy" src="./assets/haft_doggy.jpg" alt="doggy">
-                </td>
-            </div>
+        <td>
+            <img class="plotno" src="./assets/plotno.jpg" alt="plotno">
         </td>
         <td>
-            <img class="abstract1" src="./assets/abstract1.png">
+            <img class="doggy" src="./assets/haft_doggy.jpg" alt="doggy">
+        </td>
+        </div>
         </td>
         <td>
-            <img class="abstract2" src="./assets/abstract2.png">
+            <img class="abstract1" src="./assets/abstract1.png" [ngClass]="{'is-layout-handset-portrait': isLayoutHandsetPortrait,
+            'is-layout-medium':isLayoutMedium,
+            'is-layout-handset-landscape':isLayoutHandsetLandscape
+            }">
+        </td>
+        <td>
+            <img class="abstract2" src="./assets/abstract2.png" [ngClass]="{'is-layout-handset-portrait': isLayoutHandsetPortrait,
+            'is-layout-medium':isLayoutMedium,
+            'is-layout-handset-landscape':isLayoutHandsetLandscape
+            }">
         </td>
     </tr>
 </table>

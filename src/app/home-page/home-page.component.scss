@@ -2,6 +2,19 @@
     margin: 0rem 0rem 0rem 14rem;
 }
 
+.title-segment-style.is-layout-medium {
+    margin: 0rem 0rem 0rem 2rem;
+}
+
+.title-segment-style.is-layout-handset-portrait {
+    margin: 0rem 0rem 0rem 2rem;
+}
+
+.title-segment-style.is-layout-handset-landscape{
+    margin: 0rem 0rem 0rem 2rem;
+}
+
+
 .abstract1 {
     width: 40.5rem;
     height: 54rem;
@@ -11,7 +24,25 @@
     filter: brightness(250%);
 }
 
+.abstract1.is-layout-medium {
+    width: 40.5rem;
+    height: 54rem;
+    opacity: 40%;
+    float: right;
+    filter: brightness(250%);
+}
+
+
 .abstract2 {
+    filter: brightness(250%);
+    width: 40.5em;
+    height: 54rem;
+    opacity: 40%;
+    float: right;
+}
+
+.abstract2.is-layout-medium{
+    display: none;
     filter: brightness(250%);
     width: 40.5em;
     height: 54rem;
@@ -64,7 +95,6 @@
     font-size: 48px;
     line-height: 60px;
     color: #000000;
-    position: relative;
 }
 
 .button {
