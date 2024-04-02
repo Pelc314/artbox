@@ -10,7 +10,7 @@
     margin: 0rem 0rem 0rem 2rem;
 }
 
-.title-segment-style.is-layout-handset-landscape{
+.title-segment-style.is-layout-handset-landscape {
     margin: 0rem 0rem 0rem 2rem;
 }
 
@@ -32,6 +32,23 @@
     filter: brightness(250%);
 }
 
+.abstract1.is-layout-handset-landscape {
+    display: none;
+    width: 40.5rem;
+    height: 54rem;
+    opacity: 40%;
+    float: right;
+    filter: brightness(250%);
+}
+
+.abstract1.is-layout-handset-portrait {
+    display: none;
+    width: 40.5rem;
+    height: 54rem;
+    opacity: 40%;
+    float: right;
+    filter: brightness(250%);
+}
 
 .abstract2 {
     filter: brightness(250%);
@@ -41,7 +58,7 @@
     float: right;
 }
 
-.abstract2.is-layout-medium{
+.abstract2.is-layout-medium {
     display: none;
     filter: brightness(250%);
     width: 40.5em;
@@ -50,12 +67,54 @@
     float: right;
 }
 
+.abstract2.is-layout-handset-landscape {
+    display: none;
+    width: 40.5rem;
+    height: 54rem;
+    opacity: 40%;
+    float: right;
+    filter: brightness(250%);
+}
+
+.abstract2.is-layout-handset-portrait {
+    display: none;
+    width: 40.5rem;
+    height: 54rem;
+    opacity: 40%;
+    float: right;
+    filter: brightness(250%);
+}
+
 .matdivider-style {
     margin: 2rem 14rem 2rem 14rem;
 }
 
+.matdivider-style.is-layout-medium{
+    margin: 2rem 4em 2rem 4rem;
+}
+
+.matdivider-style.is-layout-handset-portrait {
+    margin: 2rem 2em 2rem 2rem;
+}
+
+.matdivider-style.is-layout-handset-landscape {
+    margin: 2rem 2em 2rem 2rem;
+}
+
 .bottom-matdivider-style {
     margin: 2rem 14rem 0rem 14rem;
+}
+
+.bottom-matdivider-style.is-layout-medium{
+    margin: 2rem 4em 0rem 4rem;
+}
+
+.bottom-matdivider-style.is-layout-handset-portrait {
+    margin: 2rem 2em 0rem 2rem;
+}
+
+.bottom-matdivider-style.is-layout-handset-landscape {
+    margin: 2rem 2em 0rem 2rem;
 }
 
 .segment-style {
@@ -63,9 +122,37 @@
     margin: 0rem 8rem 0rem 6rem;
 }
 
+.segment-style.is-layout-medium {
+    height: 20rem;
+    margin: 0rem 2rem 0rem 2rem;
+}
+
+.segment-style.is-layout-handset-portrait {
+    height: 20rem;
+}
+
+.segment-style.is-layout-handset-landscape {
+    height: 20rem;
+}
+
+
 .inner-segment-style {
     height: 15rem;
     margin: 0rem 6rem 0rem 6rem;
+}
+
+.inner-segment-style.is-layout-medium {
+    height: 15rem;
+    margin: 0rem 3rem 0rem 3rem;
+}
+
+.inner-segment-style.is-layout-handset-portrait {
+    height: 15rem;
+}
+
+.inner-segment-style.is-layout-handset-landscape {
+    height: 15rem;
+    background-color: aqua;
 }
 
 .plotno {
@@ -84,6 +171,39 @@
     margin-left: -4rem;
     transform: rotate(10deg);
     opacity: 70%;
+}
+
+.title {
+    width: 30rem;
+    float: right;
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.title.is-layout-handset-portrait {
+    width: 20rem;
+    float: left;
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.title {
+    width: 30rem;
+    float: right;
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    color: #000000;
 }
 
 .title {
@@ -130,6 +250,24 @@
     margin: 0rem 6rem 0rem 8rem;
 }
 
+.pastel-style.is-layout-medium {
+    width: 16rem;
+    height: 22rem;
+    margin: 0rem 4rem 0rem 6rem;
+}
+
+.pastel-style.is-layout-handset-portrait {
+    width: 16rem;
+    height: 22rem;
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+.pastel-style.is-layout-handset-landscape {
+    width: 16rem;
+    height: 22rem;
+    margin: 0rem 0rem 0rem 0rem;
+}
+
 .pozlacanie1-style {
     border-radius: 50%;
     height: 22rem;
@@ -143,7 +281,7 @@
     font-weight: 500;
     font-size: 16px;
     color: #000000;
-    
+
 }
 
 .segment-body {

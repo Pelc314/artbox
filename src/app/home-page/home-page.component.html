@@ -1,10 +1,15 @@
-<table class="title-segment-style" [ngClass]="{'is-layout-handset-portrait': isLayoutHandsetPortrait,
+<table class="title-segment-style" [ngClass]="{
+'is-layout-handset-portrait': isLayoutHandsetPortrait,
 'is-layout-medium':isLayoutMedium,
 'is-layout-handset-landscape':isLayoutHandsetLandscape
 }">
     <tr>
         <td>
-            <div class="title">
+            <div class="title" [ngClass]="{
+                'is-layout-handset-portrait': isLayoutHandsetPortrait,
+                'is-layout-medium':isLayoutMedium,
+                'is-layout-handset-landscape':isLayoutHandsetLandscape
+                }">
                 Artystyczne zlecenia i usługi. Tworzone z pasją.
             </div>
             <div>
@@ -20,23 +25,37 @@
         </div>
         </td>
         <td>
-            <img class="abstract1" src="./assets/abstract1.png" [ngClass]="{'is-layout-handset-portrait': isLayoutHandsetPortrait,
+            <img class="abstract1" src="./assets/abstract1.png" [ngClass]="{
+            'is-layout-handset-portrait': isLayoutHandsetPortrait,
             'is-layout-medium':isLayoutMedium,
             'is-layout-handset-landscape':isLayoutHandsetLandscape
             }">
         </td>
         <td>
-            <img class="abstract2" src="./assets/abstract2.png" [ngClass]="{'is-layout-handset-portrait': isLayoutHandsetPortrait,
+            <img class="abstract2" src="./assets/abstract2.png" [ngClass]="{
+            'is-layout-handset-portrait': isLayoutHandsetPortrait,
             'is-layout-medium':isLayoutMedium,
             'is-layout-handset-landscape':isLayoutHandsetLandscape
             }">
         </td>
     </tr>
 </table>
-<mat-divider class="matdivider-style"></mat-divider>
-<table class="segment-style">
+<mat-divider class="matdivider-style" [ngClass]="{
+    'is-layout-handset-portrait': isLayoutHandsetPortrait,
+    'is-layout-medium':isLayoutMedium,
+    'is-layout-handset-landscape':isLayoutHandsetLandscape
+    }"></mat-divider>
+<table class="segment-style" [ngClass]="{
+    'is-layout-handset-portrait': isLayoutHandsetPortrait,
+    'is-layout-medium':isLayoutMedium,
+    'is-layout-handset-landscape':isLayoutHandsetLandscape
+    }">
     <tr>
-        <td><img class="pastel-style" src="./assets/pastel.jpg"></td>
+        <td><img class="pastel-style" src="./assets/pastel.jpg" [ngClass]="{
+            'is-layout-handset-portrait': isLayoutHandsetPortrait,
+            'is-layout-medium':isLayoutMedium,
+            'is-layout-handset-landscape':isLayoutHandsetLandscape
+            }"></td>
         <td>
             <table class="inner-segment-style">
                 <tr class="segment-heading">
@@ -52,8 +71,16 @@
         </td>
     </tr>
 </table>
-<mat-divider class="matdivider-style"></mat-divider>
-<table class="segment-style">
+<mat-divider class="matdivider-style" [ngClass]="{
+    'is-layout-handset-portrait': isLayoutHandsetPortrait,
+    'is-layout-medium':isLayoutMedium,
+    'is-layout-handset-landscape':isLayoutHandsetLandscape
+    }"></mat-divider>
+<table class="segment-style" [ngClass]="{
+    'is-layout-handset-portrait': isLayoutHandsetPortrait,
+    'is-layout-medium':isLayoutMedium,
+    'is-layout-handset-landscape':isLayoutHandsetLandscape
+    }">
     <tr>
         <td><img class="pozlacanie1-style" src="./assets/pozlacanie1.jpg"></td>
         <td>
@@ -71,8 +98,16 @@
         </td>
     </tr>
 </table>
-<mat-divider class="matdivider-style"></mat-divider>
-<table class="segment-style">
+<mat-divider class="matdivider-style" [ngClass]="{
+    'is-layout-handset-portrait': isLayoutHandsetPortrait,
+    'is-layout-medium':isLayoutMedium,
+    'is-layout-handset-landscape':isLayoutHandsetLandscape
+    }"></mat-divider>
+<table class="segment-style" [ngClass]="{
+    'is-layout-handset-portrait': isLayoutHandsetPortrait,
+    'is-layout-medium':isLayoutMedium,
+    'is-layout-handset-landscape':isLayoutHandsetLandscape
+    }">
     <tr>
         <td><img class="fish-style" src="./assets/fish.jpg"></td>
         <td>
@@ -90,4 +125,8 @@
         </td>
     </tr>
 </table>
-<mat-divider class="bottom-matdivider-style"></mat-divider>
+<mat-divider class="bottom-matdivider-style" [ngClass]="{
+    'is-layout-handset-portrait': isLayoutHandsetPortrait,
+    'is-layout-medium':isLayoutMedium,
+    'is-layout-handset-landscape':isLayoutHandsetLandscape
+    }"></mat-divider>
