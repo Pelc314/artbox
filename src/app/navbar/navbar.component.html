@@ -21,3 +21,30 @@
       [ngClass]="'nav-kontakt-button'">Kontakt</button>
   </mat-toolbar-row>
 </mat-toolbar>
+
+<mat-drawer-container class="sidenav"
+  >
+  <mat-drawer #drawer
+    class="sidenav_drawer"
+    mode="side">
+    <mat-toolbar>
+      <button mat-button
+        
+        routerLink="/artystyczneoprawy"
+        (click)="handleArtystyczneOprawy()  ">Artystyczne oprawy
+        obrazów</button>
+      <button mat-button
+        >Usługi pozłotnicze</button>
+      <button mat-button
+        >Wernisaże</button>
+      <button mat-button
+        >Kontakt</button>
+    </mat-toolbar>
+  </mat-drawer>
+
+  <button mat-button
+    (click)="drawer.toggle()">
+    Toggle sidenav
+  </button>
+
+</mat-drawer-container>

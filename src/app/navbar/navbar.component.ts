@@ -10,7 +10,7 @@ import { Layout, ResponsiveLayout } from '../services/responsiveLayout.service';
 export class NavbarComponent implements OnInit, OnDestroy {
   subscription: Subscription = new Subscription;
   currentLayout: Layout = Layout.Large;
-
+  showFiller = false;
   constructor(private readonly responsiveLayoutService: ResponsiveLayout) { }
 
   ngOnInit(): void {
