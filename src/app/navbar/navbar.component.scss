@@ -33,16 +33,16 @@
   background-color: white;
 }
 
-.container.is-layout-handset-portrait {
+.container.layout-portrait {
   display: none;
 }
 
-.container.is-layout-medium {
+.container.layout-medium {
   padding-left: 2rem;
   padding-right: 0rem;
 }
 
-.container.is-layout-handset-landscape {
+.container.layout-landscape {
   padding-left: 0rem;
   padding-right: 0rem;
 }

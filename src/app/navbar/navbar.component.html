@@ -1,7 +1,7 @@
 <mat-toolbar class="container"
-  [ngClass]="{'is-layout-handset-portrait': currentLayout == 'HandsetPortrait',
-  'is-layout-medium': currentLayout == 'Medium',
-  'is-layout-handset-landscape': currentLayout == 'HandsetLandscape'
+  [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+  'layout-medium': currentLayout == 'Medium',
+  'layout-landscape': currentLayout == 'HandsetLandscape'
 }">
   <mat-toolbar-row>
     <p on

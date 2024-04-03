@@ -1,60 +1,68 @@
-<table class="title-segment-style" 
-[ngClass]="{'is-layout-handset-portrait': currentLayout == 'HandsetPortrait',
-'is-layout-medium': currentLayout == 'Medium',
-'is-layout-handset-landscape': currentLayout == 'HandsetLandscape'
+<table class="title-segment-style"
+    [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+'layout-medium': currentLayout == 'Medium',
+'layout-landscape': currentLayout == 'HandsetLandscape'
 }">
     <tr>
         <td>
-            <div class="title" 
-            [ngClass]="{'is-layout-handset-portrait': currentLayout == 'HandsetPortrait',
-            'is-layout-medium': currentLayout == 'Medium',
-            'is-layout-handset-landscape': currentLayout == 'HandsetLandscape'
+            <div class="title"
+                [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+            'layout-medium': currentLayout == 'Medium',
+            'layout-landscape': currentLayout == 'HandsetLandscape'
           }">
                 Artystyczne zlecenia i usługi. Tworzone z pasją.
             </div>
             <div>
-                <button mat-button [ngClass]="'first-button'">Sprawdź naszą ofertę</button>
+                <button mat-button
+                    [ngClass]="'first-button'">Sprawdź naszą ofertę</button>
             </div>
             <div>
         <td>
-            <img class="plotno" src="./assets/plotno.jpg" alt="plotno">
+            <img class="plotno"
+                src="./assets/plotno.jpg"
+                alt="plotno">
         </td>
         <td>
-            <img class="doggy" src="./assets/haft_doggy.jpg" alt="doggy">
+            <img class="doggy"
+                src="./assets/haft_doggy.jpg"
+                alt="doggy">
         </td>
         </div>
         </td>
         <td>
-            <img class="abstract1" src="./assets/abstract1.png"
-            [ngClass]="{'is-layout-handset-portrait': currentLayout == 'HandsetPortrait',
-            'is-layout-medium': currentLayout == 'Medium',
-            'is-layout-handset-landscape': currentLayout == 'HandsetLandscape'
+            <img class="abstract1"
+                src="./assets/abstract1.png"
+                [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+            'layout-medium': currentLayout == 'Medium',
+            'layout-landscape': currentLayout == 'HandsetLandscape'
           }">
         </td>
         <td>
-            <img class="abstract2" src="./assets/abstract2.png"   
-            [ngClass]="{'is-layout-handset-portrait': currentLayout == 'HandsetPortrait',
-            'is-layout-medium': currentLayout == 'Medium',
-            'is-layout-handset-landscape': currentLayout == 'HandsetLandscape'
+            <img class="abstract2"
+                src="./assets/abstract2.png"
+                [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+            'layout-medium': currentLayout == 'Medium',
+            'layout-landscape': currentLayout == 'HandsetLandscape'
           }">
         </td>
     </tr>
 </table>
 <mat-divider class="matdivider-style"
-[ngClass]="{'is-layout-handset-portrait': currentLayout == 'HandsetPortrait',
-'is-layout-medium': currentLayout == 'Medium',
-'is-layout-handset-landscape': currentLayout == 'HandsetLandscape'
+    [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+'layout-medium': currentLayout == 'Medium',
+'layout-landscape': currentLayout == 'HandsetLandscape'
 }"></mat-divider>
-<table class="segment-style" 
-[ngClass]="{'is-layout-handset-portrait': currentLayout == 'HandsetPortrait',
-'is-layout-medium': currentLayout == 'Medium',
-'is-layout-handset-landscape': currentLayout == 'HandsetLandscape'
+<table class="segment-style"
+    [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+'layout-medium': currentLayout == 'Medium',
+'layout-landscape': currentLayout == 'HandsetLandscape'
 }">
     <tr>
-        <td><img class="pastel-style" src="./assets/pastel.jpg" 
-            [ngClass]="{'is-layout-handset-portrait': currentLayout == 'HandsetPortrait',
-            'is-layout-medium': currentLayout == 'Medium',
-            'is-layout-handset-landscape': currentLayout == 'HandsetLandscape'
+        <td><img class="pastel-style"
+                src="./assets/pastel.jpg"
+                [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+            'layout-medium': currentLayout == 'Medium',
+            'layout-landscape': currentLayout == 'HandsetLandscape'
           }"></td>
         <td>
             <table class="inner-segment-style">
@@ -65,24 +73,26 @@
                     Obrazy olejne, grafiki, akwarele, pastele, hafty, zdjęcia, lustra i wiele innych.
                 </tr>
                 <tr>
-                    <button mat-button [ngClass]="'button'">Sprawdź więcej</button>
+                    <button mat-button
+                        [ngClass]="'button'">Sprawdź więcej</button>
                 </tr>
             </table>
         </td>
     </tr>
 </table>
-<mat-divider class="matdivider-style" 
-[ngClass]="{'is-layout-handset-portrait': currentLayout == 'HandsetPortrait',
-'is-layout-medium': currentLayout == 'Medium',
-'is-layout-handset-landscape': currentLayout == 'HandsetLandscape'
+<mat-divider class="matdivider-style"
+    [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+'layout-medium': currentLayout == 'Medium',
+'layout-landscape': currentLayout == 'HandsetLandscape'
 }"></mat-divider>
-<table class="segment-style" 
-[ngClass]="{'is-layout-handset-portrait': currentLayout == 'HandsetPortrait',
-'is-layout-medium': currentLayout == 'Medium',
-'is-layout-handset-landscape': currentLayout == 'HandsetLandscape'
+<table class="segment-style"
+    [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+'layout-medium': currentLayout == 'Medium',
+'layout-landscape': currentLayout == 'HandsetLandscape'
 }">
     <tr>
-        <td><img class="pozlacanie1-style" src="./assets/pozlacanie1.jpg"></td>
+        <td><img class="pozlacanie1-style"
+                src="./assets/pozlacanie1.jpg"></td>
         <td>
             <table class="inner-segment-style">
                 <tr class="segment-heading">
@@ -92,24 +102,26 @@
                     Pełen zakres usług - w tym naprawa starych złoceń na ramach, rzeźbach i meblach.
                 </tr>
                 <tr>
-                    <button mat-button [ngClass]="'button'">Sprawdź więcej</button>
+                    <button mat-button
+                        [ngClass]="'button'">Sprawdź więcej</button>
                 </tr>
             </table>
         </td>
     </tr>
 </table>
-<mat-divider class="matdivider-style" 
-[ngClass]="{'is-layout-handset-portrait': currentLayout == 'HandsetPortrait',
-'is-layout-medium': currentLayout == 'Medium',
-'is-layout-handset-landscape': currentLayout == 'HandsetLandscape'
+<mat-divider class="matdivider-style"
+    [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+'layout-medium': currentLayout == 'Medium',
+'layout-landscape': currentLayout == 'HandsetLandscape'
 }"></mat-divider>
-<table class="segment-style" 
-[ngClass]="{'is-layout-handset-portrait': currentLayout == 'HandsetPortrait',
-'is-layout-medium': currentLayout == 'Medium',
-'is-layout-handset-landscape': currentLayout == 'HandsetLandscape'
+<table class="segment-style"
+    [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+'layout-medium': currentLayout == 'Medium',
+'layout-landscape': currentLayout == 'HandsetLandscape'
 }">
     <tr>
-        <td><img class="fish-style" src="./assets/fish.jpg"></td>
+        <td><img class="fish-style"
+                src="./assets/fish.jpg"></td>
         <td>
             <table class="inner-segment-style">
                 <tr class="segment-heading">
@@ -119,14 +131,15 @@
                     Wystawy dla galerii i indywidualnych artystów.
                 </tr>
                 <tr>
-                    <button mat-button [ngClass]="'button'">Sprawdź więcej</button>
+                    <button mat-button
+                        [ngClass]="'button'">Sprawdź więcej</button>
                 </tr>
             </table>
         </td>
     </tr>
 </table>
-<mat-divider class="bottom-matdivider-style" 
-[ngClass]="{'is-layout-handset-portrait': currentLayout == 'HandsetPortrait',
-'is-layout-medium': currentLayout == 'Medium',
-'is-layout-handset-landscape': currentLayout == 'HandsetLandscape'
+<mat-divider class="bottom-matdivider-style"
+    [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+'layout-medium': currentLayout == 'Medium',
+'layout-landscape': currentLayout == 'HandsetLandscape'
 }"></mat-divider>
