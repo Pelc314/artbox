@@ -13,19 +13,30 @@
                 Artystyczne zlecenia i usługi. Tworzone z pasją.
             </div>
             <div>
-                <button mat-button
-                    [ngClass]="'first-button'">Sprawdź naszą ofertę</button>
+                <button mat-button class="first-button"
+                    [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+                    'layout-medium': currentLayout == 'Medium',
+                    'layout-landscape': currentLayout == 'HandsetLandscape'
+                  }">Sprawdź naszą ofertę</button>
             </div>
             <div>
         <td>
             <img class="plotno"
                 src="./assets/plotno.jpg"
-                alt="plotno">
+                alt="plotno"   
+                [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+                'layout-medium': currentLayout == 'Medium',
+                'layout-landscape': currentLayout == 'HandsetLandscape'
+              }">
         </td>
         <td>
             <img class="doggy"
                 src="./assets/haft_doggy.jpg"
-                alt="doggy">
+                alt="doggy"
+                [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+                'layout-medium': currentLayout == 'Medium',
+                'layout-landscape': currentLayout == 'HandsetLandscape'
+              }">
         </td>
         </div>
         </td>
@@ -49,13 +60,13 @@
 </table>
 <mat-divider class="matdivider-style"
     [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
-'layout-medium': currentLayout == 'Medium',
-'layout-landscape': currentLayout == 'HandsetLandscape'
+        'layout-medium': currentLayout == 'Medium',
+        'layout-landscape': currentLayout == 'HandsetLandscape'
 }"></mat-divider>
 <table class="segment-style"
     [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
-'layout-medium': currentLayout == 'Medium',
-'layout-landscape': currentLayout == 'HandsetLandscape'
+        'layout-medium': currentLayout == 'Medium',
+        'layout-landscape': currentLayout == 'HandsetLandscape'
 }">
     <tr>
         <td><img class="pastel-style"

@@ -129,10 +129,12 @@
 
 .segment-style.layout-portrait {
     height: 20rem;
+    margin: 0rem 0rem 0rem 1rem;
 }
 
 .segment-style.layout-landscape {
     height: 20rem;
+    margin: 0rem 2rem 0rem 2rem;
 }
 
 
@@ -164,11 +166,30 @@
     opacity: 70%;
 }
 
+.plotno.layout-portrait {
+    position: relative;
+    z-index: 1;
+    width: 10.5rem;
+    height: 12rem;
+    padding-left: 2rem;
+    transform: rotate(-10deg);
+    opacity: 70%;
+}
+
 .doggy {
     position: relative;
     width: 14rem;
     height: 16rem;
     margin-left: -4rem;
+    transform: rotate(10deg);
+    opacity: 70%;
+}
+
+.doggy.layout-portrait {
+    position: relative;
+    width: 10.5rem;
+    height: 12rem;
+    margin-left: -3rem;
     transform: rotate(10deg);
     opacity: 70%;
 }
@@ -185,17 +206,18 @@
 }
 
 .title.layout-portrait {
-    width: 20rem;
-    float: left;
+    width: 22rem;
+    float: none;
     font-family: 'Red Rose';
     font-style: normal;
     font-weight: 400;
+    text-align: center;
     font-size: 40px;
     line-height: 60px;
     color: #000000;
 }
 
-.title {
+.title.layout-medium {
     width: 30rem;
     float: right;
     font-family: 'Red Rose';
@@ -206,7 +228,7 @@
     color: #000000;
 }
 
-.title {
+.title.layout-landscape {
     width: 30rem;
     float: right;
     font-family: 'Red Rose';
@@ -242,7 +264,31 @@
     margin: 2rem 0rem 10rem 0rem;
 }
 
+.first-button.layout-portrait {
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    cursor: pointer;
+    letter-spacing: 0.2px;
+    width: 18rem;
+    height: 4rem;
+    background-color: #FFEEA1;
+    margin: 2rem 0rem 5rem 2rem;
+}
 
+.first-button.layout-landscape {
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    cursor: pointer;
+    letter-spacing: 0.2px;
+    width: 18rem;
+    height: 4rem;
+    background-color: #FFEEA1;
+    margin: 2rem 0rem 5rem 2rem;
+}
 
 .pastel-style {
     width: 16rem;
