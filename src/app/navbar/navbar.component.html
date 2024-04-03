@@ -1,15 +1,23 @@
-<mat-toolbar class="container" [ngClass]="{'is-layout-handset-portrait': isLayoutHandsetPortrait,
-  'is-layout-medium':isLayoutMedium,
-  'is-layout-handset-landscape':isLayoutHandsetLandscape
+<mat-toolbar class="container"
+  [ngClass]="{'is-layout-handset-portrait': currentLayout == 'HandsetPortrait',
+  'is-layout-medium': currentLayout == 'Medium',
+  'is-layout-handset-landscape': currentLayout == 'HandsetLandscape'
 }">
   <mat-toolbar-row>
-    <p on class="title" routerLink="/homepage">artbox</p>
+    <p on
+      class="title"
+      routerLink="/homepage">artbox</p>
     <span style="flex: 1 1 auto;"></span>
-    <button mat-button [ngClass]="'nav-button'" routerLink="/artystyczneoprawy"
+    <button mat-button
+      [ngClass]="'nav-button'"
+      routerLink="/artystyczneoprawy"
       (click)="handleArtystyczneOprawy()  ">Artystyczne oprawy
       obrazów</button>
-    <button mat-button [ngClass]="'nav-button'">Usługi pozłotnicze</button>
-    <button mat-button [ngClass]="'nav-button'">Wernisaże</button>
-    <button mat-button [ngClass]="'nav-kontakt-button'">Kontakt</button>
+    <button mat-button
+      [ngClass]="'nav-button'">Usługi pozłotnicze</button>
+    <button mat-button
+      [ngClass]="'nav-button'">Wernisaże</button>
+    <button mat-button
+      [ngClass]="'nav-kontakt-button'">Kontakt</button>
   </mat-toolbar-row>
 </mat-toolbar>

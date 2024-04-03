@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { ResponsiveLayout } from '../services/responsiveLayout.service';
+import { Layout, ResponsiveLayout } from '../services/responsiveLayout.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,44 +8,19 @@ import { ResponsiveLayout } from '../services/responsiveLayout.service';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit, OnDestroy {
-  subscriptionHandsetPortrait: Subscription = new Subscription;
-  subscriptionHandsetLandscape: Subscription = new Subscription;
-  subscriptionMedium: Subscription = new Subscription;
-  subscriptionLarge: Subscription = new Subscription;
-  isLayoutHandsetPortrait: boolean = false;
-  isLayoutHandsetLandscape = false;
-  isLayoutLarge = false;
-  isLayoutMedium = false;
+  subscription: Subscription = new Subscription;
+  currentLayout: Layout = Layout.Large;
 
   constructor(private readonly responsiveLayoutService: ResponsiveLayout) { }
 
   ngOnInit(): void {
-    this.subscriptionHandsetPortrait = this.responsiveLayoutService.
-      isLayoutHandsetPortait$.subscribe(isLayoutHandsetPortrait => {
-        this.isLayoutHandsetPortrait = isLayoutHandsetPortrait;
-      });
-
-    this.subscriptionHandsetLandscape = this.responsiveLayoutService.
-      isLayoutHandsetLandscape$.subscribe(result => {
-        this.isLayoutHandsetLandscape = result;
-      });
-
-    this.subscriptionMedium = this.responsiveLayoutService.
-      isLayoutMedium$.subscribe(result => {
-        this.isLayoutMedium = result;
-      });
-
-    this.subscriptionLarge = this.responsiveLayoutService.
-      isLayoutLarge$.subscribe(result => {
-        this.isLayoutLarge = result;
-      });
+    this.subscription = this.responsiveLayoutService.layout$.subscribe(result => {
+      this.currentLayout = result;
+    });
   }
 
   ngOnDestroy(): void {
-    this.subscriptionHandsetPortrait.unsubscribe();
-    this.subscriptionHandsetLandscape.unsubscribe();
-    this.subscriptionMedium.unsubscribe();
-    this.subscriptionLarge.unsubscribe();
+    this.subscription.unsubscribe();
   }
 
   handleArtystyczneOprawy() {

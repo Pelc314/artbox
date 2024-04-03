@@ -6,36 +6,34 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class ResponsiveLayout {
 
-    private _isLayoutHandsetPortait = new BehaviorSubject<boolean>(false);
-    private _isLayoutHandsetLandscape = new BehaviorSubject<boolean>(false);
-    private _isLayoutMedium = new BehaviorSubject<boolean>(false);
-    private _isLayoutLarge = new BehaviorSubject<boolean>(false);
-    
-    isLayoutHandsetPortait$: Observable<boolean>;
-    isLayoutHandsetLandscape$: Observable<boolean>;
-    isLayoutMedium$: Observable<boolean>;
-    isLayoutLarge$: Observable<boolean>;
+    private _layout = new BehaviorSubject<Layout>(Layout.Large)
+
+    layout$: Observable<Layout>;
 
     constructor() {
-        this.isLayoutHandsetPortait$ = this._isLayoutHandsetPortait.asObservable();
-        this.isLayoutHandsetLandscape$ = this._isLayoutHandsetLandscape.asObservable();
-        this.isLayoutMedium$ = this._isLayoutMedium.asObservable();
-        this.isLayoutLarge$ = this._isLayoutLarge.asObservable();
+        this.layout$ = this._layout.asObservable();
     }
 
-    toggleLayoutHandsetPortrait(bool: boolean): void {
-        this._isLayoutHandsetPortait.next(bool);
+    toggleLayoutHandsetPortrait(): void {
+        this._layout.next(Layout.HandsetPortrait);
     }
 
-    toggleLayoutHandsetLandscape(bool: boolean): void {
-        this._isLayoutHandsetLandscape.next(bool);
+    toggleLayoutHandsetLandscape(): void {
+        this._layout.next(Layout.HandsetLandscape);
     }
 
-    toggleLayoutMedium(bool: boolean): void {
-        this._isLayoutMedium.next(bool);
+    toggleLayoutMedium(): void {
+        this._layout.next(Layout.Medium);
     }
 
-    toggleLayoutLarge(bool: boolean): void {
-        this._isLayoutLarge.next(bool);
+    toggleLayoutLarge(): void {
+        this._layout.next(Layout.Large);
     }
+}
+
+export enum Layout {
+    HandsetPortrait = "HandsetPortrait",
+    HandsetLandscape = "HandsetLandscape",
+    Medium = "Medium",
+    Large = "Large"
 }
