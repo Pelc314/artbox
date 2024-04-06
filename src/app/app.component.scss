@@ -1,0 +1,35 @@
+.toggle_sidenav_button {
+    display: none;
+}
+
+.toggle_sidenav_button.layout-portrait {
+    display: flex;
+}
+
+.sidenav_drawer {
+    display: none;
+    height: 100%;
+}
+
+.sidenav_drawer.layout-portrait {
+    display: inline;
+}
+
+.page {
+    overflow: hidden;
+}
+
+.menu_icon {
+    font-size: 1.8rem;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.title {
+    font-family: 'Bodoni Moda';
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }

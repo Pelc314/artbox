@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { ResponsiveLayout } from './services/responsiveLayout.service';
+import { Layout, ResponsiveLayout } from './services/responsiveLayout.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,8 @@ import { ResponsiveLayout } from './services/responsiveLayout.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  subscription: Subscription = new Subscription;
+  currentLayout: Layout = Layout.Large;
   constructor(private responsiveLayout: BreakpointObserver,
     private responsiveLayoutService: ResponsiveLayout) { }
 
@@ -40,6 +43,11 @@ export class AppComponent implements OnInit {
 
           this.responsiveLayoutService.toggleLayoutMedium();
         }
-      })
+      });
+
+    this.subscription = this.responsiveLayoutService.layout$.subscribe(result => {
+      this.currentLayout = result;
+      console.log(this.currentLayout);
+    });
   }
 }
