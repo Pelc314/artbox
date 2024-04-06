@@ -9,7 +9,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ArtystyczneObrazyComponent } from './artystyczne-obrazy/artystyczne-obrazy.component';
-import { MainComponent } from './main/main.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { provideRouter } from '@angular/router';
 import { routes } from './app-routing.module';
@@ -28,7 +27,6 @@ import { LayoutModule } from '@angular/cdk/layout';
     NavbarComponent,
     HomePageComponent,
     ArtystyczneObrazyComponent,
-    MainComponent,
     FooterComponent
   ],
   imports: [
