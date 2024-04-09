@@ -13,7 +13,8 @@
                 Artystyczne zlecenia i usługi. Tworzone z pasją.
             </div>
             <div>
-                <button mat-button class="first-button"
+                <button mat-button
+                    class="first-button"
                     [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
                     'layout-medium': currentLayout == 'Medium',
                     'layout-landscape': currentLayout == 'HandsetLandscape'
@@ -23,7 +24,7 @@
         <td>
             <img class="plotno"
                 src="./assets/plotno.jpg"
-                alt="plotno"   
+                alt="plotno"
                 [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
                 'layout-medium': currentLayout == 'Medium',
                 'layout-landscape': currentLayout == 'HandsetLandscape'
@@ -79,11 +80,19 @@
             'layout-landscape': currentLayout == 'HandsetLandscape'
           }"></td>
         <td>
-            <table class="inner-segment-style">
+            <table class="inner-segment-style"
+                [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+            'layout-medium': currentLayout == 'Medium',
+            'layout-landscape': currentLayout == 'HandsetLandscape'
+          }">
                 <tr class="segment-heading">
                     Artystyczne oprawy obrazów
                 </tr>
-                <tr class="segment-body">
+                <tr class="segment-body"
+                    [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+                'layout-medium': currentLayout == 'Medium',
+                'layout-landscape': currentLayout == 'HandsetLandscape'
+                }">
                     Obrazy olejne, grafiki, akwarele, pastele, hafty, zdjęcia, lustra i wiele innych.
                 </tr>
                 <tr>
@@ -114,11 +123,19 @@
 'layout-landscape': currentLayout == 'HandsetLandscape'
 }"></td>
         <td>
-            <table class="inner-segment-style">
+            <table class="inner-segment-style"
+                [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+            'layout-medium': currentLayout == 'Medium',
+            'layout-landscape': currentLayout == 'HandsetLandscape'
+          }">
                 <tr class="segment-heading">
                     Usługi pozłotnicze
                 </tr>
-                <tr class="segment-body">
+                <tr class="segment-body"
+                    [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+                'layout-medium': currentLayout == 'Medium',
+                'layout-landscape': currentLayout == 'HandsetLandscape'
+                }">
                     Pełen zakres usług - w tym naprawa starych złoceń na ramach, rzeźbach i meblach.
                 </tr>
                 <tr>
@@ -147,11 +164,19 @@
 'layout-landscape': currentLayout == 'HandsetLandscape'
 }"></td>
         <td>
-            <table class="inner-segment-style">
+            <table class="inner-segment-style"
+                [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+            'layout-medium': currentLayout == 'Medium',
+            'layout-landscape': currentLayout == 'HandsetLandscape'
+          }">
                 <tr class="segment-heading">
                     Wernisaże
                 </tr>
-                <tr class="segment-body">
+                <tr class="segment-body"
+                    [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+                'layout-medium': currentLayout == 'Medium',
+                'layout-landscape': currentLayout == 'HandsetLandscape'
+                }">
                     Wystawy dla galerii i indywidualnych artystów.
                 </tr>
                 <tr>

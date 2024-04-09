@@ -7,7 +7,7 @@
 }
 
 .title-segment-style.layout-portrait {
-    margin: 0rem 0rem 0rem 2rem;
+    margin: 0rem 0rem 0rem 5%;
 }
 
 .title-segment-style.layout-landscape {
@@ -149,14 +149,13 @@
 }
 
 .inner-segment-style.layout-portrait {
-    height: 15rem;
-    margin: 2rem 3rem 0rem 2rem;
+    height: 22rem;
+    margin: 0rem 2rem 0rem 2rem;
 }
 
 .inner-segment-style.layout-landscape {
     height: 15rem;
     margin: 0rem 2rem 0rem 2rem;
-    background-color: aqua;
 }
 
 .plotno {
@@ -357,6 +356,18 @@
     text-align: initial;
     color: #000000;
     line-height: 48px;
+}
+
+.segment-body.layout-medium {
+    font-size: 28px;
+}
+
+.segment-body.layout-landscape {
+    font-size: 28px;
+}
+
+.segment-body.layout-portrait {
+    font-size: 28px;
 }
 
 .fish-style {
