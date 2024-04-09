@@ -1,20 +1,36 @@
-<div class="footer-style">
-    <p on class="title">artbox</p>
-    <table class="table-style">
+<div class="footer-style"
+    [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+'layout-medium': currentLayout == 'Medium',
+'layout-landscape': currentLayout == 'HandsetLandscape'
+}">
+    <p on
+        class="title"
+        [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+        'layout-medium': currentLayout == 'Medium',
+        'layout-landscape': currentLayout == 'HandsetLandscape'
+        }">artbox</p>
+    <table class="table-style"
+    [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+    'layout-medium': currentLayout == 'Medium',
+    'layout-landscape': currentLayout == 'HandsetLandscape'
+    }">
         <td>
             <ul class="list-kontakt">
                 <div class="heading">
                     Adres
                 </div>
-                <p style="padding-top: 1rem;">
+                <p class="adres">
                     ul. Sempołowskiej 5 <br>
                     51-660 Wrocław
                 </p>
-                <div style="cursor: pointer;" (click)="handleShowMap()">
+                <div style="cursor: pointer;"
+                    (click)="handleShowMap()">
                     <span>
                         Pokaż na mapie
                     </span>
-                    <img src="./assets/imgs/open_maps.png" alt="maps icon" style="width: 1.1rem; float: right;">
+                    <img src="./assets/imgs/open_maps.png"
+                        alt="maps icon"
+                        style="width: 1.1rem; float: right;">
                     <p style="padding-top: 0.5rem;">
                         &copy; 2024 artbox
                     </p>
@@ -26,7 +42,10 @@
                 <p class="heading">
                     Napisz do nas:
                 </p>
-                <p class="bold" style="cursor: pointer;" [cdkCopyToClipboard]="email" (click)="handleClick()">
+                <p class="bold"
+                    style="cursor: pointer;"
+                    [cdkCopyToClipboard]="email"
+                    (click)="handleClick()">
                     biuro@artbox.com.pl
                 </p>
                 <p style="
@@ -34,17 +53,24 @@
                  ">
                     Lub zadzwoń:
                 </p>
-                <p class="bold" style="margin-bottom: 0.4rem; cursor: pointer;" [cdkCopyToClipboard]="mobileNumber" (click)="handleClick()">
+                <p class="bold"
+                    style="margin-bottom: 0.4rem; cursor: pointer;"
+                    [cdkCopyToClipboard]="mobileNumber"
+                    (click)="handleClick()">
                     +48 604 912 792
                 </p>
-                <p class="bold" style="cursor: pointer;" [cdkCopyToClipboard]="phoneNumber" (click)="handleClick()">
+                <p class="bold"
+                    style="cursor: pointer;"
+                    [cdkCopyToClipboard]="phoneNumber"
+                    (click)="handleClick()">
                     (0 71) 345 22 22
                 </p>
             </ul>
         </td>
         <td>
             <ul class="list-wspolprace">
-                <div class="heading" style="margin-bottom: 1rem;">
+                <div class="heading"
+                    style="margin-bottom: 1rem;">
                     Współprace
                 </div>
                 <p>

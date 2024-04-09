@@ -9,15 +9,56 @@
     margin: 1.5rem 0rem 0rem 14rem;
 }
 
+.title.layout-medium {
+    margin: 1.5rem 0rem 0rem 6rem;
+    
+}
+
+.title.layout-landscape {
+    margin: 1.5rem 0rem 0rem 2rem;
+}
+
+.title.layout-portrait {
+    margin: 1.5rem 0rem 0rem 2rem;
+}
+
 .table-style {
     margin: 1rem 0rem 0rem 11.3rem;
-    height: 10rem;
+    height: fit-content;
 }
+
+.table-style.layout-medium {
+    margin: 1rem 0rem 0rem 6rem;
+    height: fit-content;
+}
+
+.table-style.layout-landscape {
+    margin: 0rem 0rem 0rem -0.6rem;
+    height: fit-content;
+}
+
+.table-style.layout-portrait {
+    margin: 0rem 0rem 0rem -0.8em;
+    height: fit-content;
+}
+
 
 .footer-style {
     background-color: #FCFBFB;
     padding-top: 1rem;
-    height: 15rem;
+    height: fit-content;
+}
+
+.footer-style.layout-medium {
+    height: fit-content;
+}
+
+.footer-style.layout-landscape {
+height: fit-content;
+}
+
+.footer-style.layout-portrait {
+    height: fit-content;
 }
 
 .heading {
@@ -40,16 +81,16 @@
 }
 
 .adres {
-    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
-.list-wspolprace p{
+.list-wspolprace p {
     margin: 0;
     font-size: 16px;
     font-family: "Poppins";
     font-weight: 400;
 }
 
-.list-kontakt{
+.list-kontakt {
     font-size: 16px;
 }
