@@ -129,7 +129,7 @@
 
 .segment-style.layout-portrait {
     height: 20rem;
-    margin: 0rem 0rem 0rem 1rem;
+    margin: 0rem 0rem 0rem 0rem;
 }
 
 .segment-style.layout-landscape {
@@ -150,10 +150,12 @@
 
 .inner-segment-style.layout-portrait {
     height: 15rem;
+    margin: 2rem 3rem 0rem 2rem;
 }
 
 .inner-segment-style.layout-landscape {
     height: 15rem;
+    margin: 0rem 2rem 0rem 2rem;
     background-color: aqua;
 }
 
@@ -303,6 +305,7 @@
 }
 
 .pastel-style.layout-portrait {
+    display: none;
     width: 16rem;
     height: 22rem;
     margin: 0rem 0rem 0rem 0rem;
@@ -321,6 +324,22 @@
     margin: 0rem 2rem 0rem 8rem;
 }
 
+.pozlacanie1-style.layout-medium {
+    margin: 0rem 4rem 0rem 6rem;
+
+}
+
+.pozlacanie1-style.layout-landscape {
+    margin: 0rem 0rem 0rem 0rem;
+    height: 19rem;
+    width: 17.1rem;
+
+}
+
+.pozlacanie1-style.layout-portrait {
+    display: none;
+}
+
 .segment-heading {
     font-family: Poppins;
     font-style: normal;
@@ -335,6 +354,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
+    text-align: initial;
     color: #000000;
     line-height: 48px;
 }
@@ -343,4 +363,18 @@
     height: 20rem;
     width: 20rem;
     margin: 0rem 2rem 0rem 8rem;
+}
+
+.fish-style.layout-medium {
+    margin: 0rem 4rem 0rem 6rem;
+}
+
+.fish-style.layout-landscape {
+    margin: 0rem 0rem 0rem 0rem;
+    height: 17rem;
+    width: 17rem;
+}
+
+.fish-style.layout-portrait {
+    display: none;
 }

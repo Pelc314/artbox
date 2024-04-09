@@ -58,11 +58,14 @@
         </td>
     </tr>
 </table>
+<!-- First segment -->
+
 <mat-divider class="matdivider-style"
     [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
         'layout-medium': currentLayout == 'Medium',
         'layout-landscape': currentLayout == 'HandsetLandscape'
 }"></mat-divider>
+
 <table class="segment-style"
     [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
         'layout-medium': currentLayout == 'Medium',
@@ -91,11 +94,13 @@
         </td>
     </tr>
 </table>
+
 <mat-divider class="matdivider-style"
     [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
 'layout-medium': currentLayout == 'Medium',
 'layout-landscape': currentLayout == 'HandsetLandscape'
 }"></mat-divider>
+
 <table class="segment-style"
     [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
 'layout-medium': currentLayout == 'Medium',
@@ -103,7 +108,11 @@
 }">
     <tr>
         <td><img class="pozlacanie1-style"
-                src="./assets/pozlacanie1.jpg"></td>
+                src="./assets/pozlacanie1.jpg"
+                [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+'layout-medium': currentLayout == 'Medium',
+'layout-landscape': currentLayout == 'HandsetLandscape'
+}"></td>
         <td>
             <table class="inner-segment-style">
                 <tr class="segment-heading">
@@ -132,7 +141,11 @@
 }">
     <tr>
         <td><img class="fish-style"
-                src="./assets/fish.jpg"></td>
+                src="./assets/fish.jpg"
+                [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+'layout-medium': currentLayout == 'Medium',
+'layout-landscape': currentLayout == 'HandsetLandscape'
+}"></td>
         <td>
             <table class="inner-segment-style">
                 <tr class="segment-heading">
