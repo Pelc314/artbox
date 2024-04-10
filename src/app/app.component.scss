@@ -1,9 +1,17 @@
 .toggle_sidenav_button {
     display: none;
+    background-color: white;
+    position: sitcky;
+    top: 0;
+    z-index: 100;
 }
 
 .toggle_sidenav_button.layout-portrait {
     display: flex;
+    position: sitcky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
 }
 
 .sidenav_drawer {
@@ -17,6 +25,7 @@
 
 .page {
     overflow: hidden;
+    background-color: white;
 }
 
 .menu_icon {
@@ -32,4 +41,10 @@
     color: #000000;
     cursor: pointer;
     margin-top: 0.5rem;
+  }
+
+  .app-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
