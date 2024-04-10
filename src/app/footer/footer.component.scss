@@ -11,7 +11,7 @@
 
 .title.layout-medium {
     margin: 1.5rem 0rem 0rem 6rem;
-    
+
 }
 
 .title.layout-landscape {
@@ -54,7 +54,7 @@
 }
 
 .footer-style.layout-landscape {
-height: fit-content;
+    height: fit-content;
 }
 
 .footer-style.layout-portrait {
@@ -80,9 +80,14 @@ height: fit-content;
     size: 18px;
 }
 
+.bold.layout-portrait {
+    font-size: 12px;
+}
+
 .adres {
     padding-top: 1rem;
 }
+
 
 .list-wspolprace p {
     margin: 0;
@@ -91,6 +96,55 @@ height: fit-content;
     font-weight: 400;
 }
 
+.list-wspolprace-desktop.layout-landscape {
+    display: none;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Poppins";
+    font-weight: 400;
+    background-color: aqua;
+}
+
+.list-wspolprace-desktop.layout-portrait {
+    display: none;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Poppins";
+    font-weight: 400;
+    background-color: aqua;
+}
+
 .list-kontakt {
     font-size: 16px;
+    width: 9rem;
+}
+
+.list-kontakt.layout-medium {}
+
+.list-kontakt.layout-landscape {
+    width: 9rem;
+}
+
+.list-kontakt.layout-portrait {
+    width: 60%;
+}
+
+.napisz-do-nas-style {
+    padding-right: 10rem;
+}
+
+.napisz-do-nas-style.layout-portrait {
+    padding-right: 2rem;
+}
+
+.list-wspolprace-mobile {
+    display: none;
+}
+
+.list-wspolprace-mobile.layout-portrait {
+    display: table-row;
+}
+
+.list-wspolprace-mobile.layout-landscape {
+    display: table-row;
 }
