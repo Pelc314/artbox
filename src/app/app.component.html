@@ -1,6 +1,9 @@
 <app-navbar class="app-navbar"></app-navbar>
 <mat-drawer-container>
-  <mat-drawer #drawer class="sidenav_drawer" mode="over" [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+  <mat-drawer #drawer
+    class="sidenav_drawer"
+    mode="over"
+    [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
   'layout-medium': currentLayout == 'Medium',
   'layout-landscape': currentLayout == 'HandsetLandscape'
 }">
@@ -20,11 +23,13 @@
       </mat-toolbar-row>
     </mat-toolbar>
   </mat-drawer>
-  <mat-toolbar-row class="toggle_sidenav_button" [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+  <mat-toolbar-row class="sidenav_navbar"
+    [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
   'layout-medium': currentLayout == 'Medium',
   'layout-landscape': currentLayout == 'HandsetLandscape'
 }">
-    <button mat-button (click)="drawer.toggle()">
+    <button mat-button
+      (click)="drawer.toggle()">
       <mat-icon style="
       font-size: 1.6rem; 
       height: 2.5rem;
@@ -34,13 +39,18 @@
       </mat-icon>
     </button>
     <span style="width: 25%;"></span>
-    <p on class="title" routerLink="/homepage">
+    <p on
+      class="title"
+      routerLink="/homepage">
       artbox
     </p>
   </mat-toolbar-row>
 
-  <div class="page">
-    
+  <div class="page"
+    [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+  'layout-medium': currentLayout == 'Medium',
+  'layout-landscape': currentLayout == 'HandsetLandscape'
+}">
     <router-outlet></router-outlet>
     <footer>
       <app-footer></app-footer>
