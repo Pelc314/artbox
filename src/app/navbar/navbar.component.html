@@ -1,4 +1,5 @@
 <mat-toolbar class="container"
+  *ngIf="layout$ | async as currentLayout"
   [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
   'layout-medium': currentLayout == 'Medium',
   'layout-landscape': currentLayout == 'HandsetLandscape'
