@@ -1,5 +1,5 @@
 <app-navbar class="app-navbar"></app-navbar>
-<mat-drawer-container>
+<mat-drawer-container *ngIf="currentLayout$ | async as currentLayout">
   <mat-drawer #drawer
     class="sidenav_drawer"
     mode="over"

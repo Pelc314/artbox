@@ -1,4 +1,4 @@
-<div class="footer-style" [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
+<div *ngIf="currentLayout$ | async as currentLayout" class="footer-style" [ngClass]="{'layout-portrait': currentLayout == 'HandsetPortrait',
 'layout-medium': currentLayout == 'Medium',
 'layout-landscape': currentLayout == 'HandsetLandscape'
 }">
