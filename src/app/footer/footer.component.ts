@@ -6,7 +6,7 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit, OnDestroy {
   mobileNumber = '+48 604 912 792';

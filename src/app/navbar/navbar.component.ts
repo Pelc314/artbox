@@ -5,7 +5,7 @@ import { Layout, ResponsiveLayout } from '../services/responsiveLayout.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss'],
+  styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
   public layout$: Observable<Layout> = this.responsiveLayoutService.layout$;
