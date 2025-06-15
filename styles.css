@@ -34,8 +34,8 @@ body {
   position: relative;
   z-index: 2;
   /* Ensure plotno is above doggy */
-  width: 14rem;
-  height: 16rem;
+  width: 14.5rem;
+  height: auto;
   transform: rotate(-10deg);
   margin-left: 4.5rem;
   /* Move plotno right to overlap doggy */
@@ -51,32 +51,47 @@ body {
   transform: rotate(10deg);
 }
 
+.pastel-style,
+.pozlacanie1-style,
+.fish-style {
+  /* Use max-width and height: auto to ensure responsiveness */
+  max-width: 100%;
+  /* Allows images to scale down */
+  height: auto;
+  /* Maintains aspect ratio */
+  margin: 0;
+  display: block;
+}
+
 .pastel-style {
   width: 16rem;
-  height: 22rem;
-  margin: 0;
+  /* Base size for larger screens */
 }
 
 .pozlacanie1-style {
   border-radius: 50%;
-  height: 22rem;
   width: 20rem;
-  margin: 0;
+  /* Base size for larger screens */
 }
 
 .fish-style {
-  height: 20rem;
   width: 20rem;
-  margin: 0;
+  /* Base size for larger screens */
 }
+
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
+
+  /* ... (previous adjustments for title, plotno/doggy width/height, pastel/pozlacanie/fish) ... */
   .title {
     font-size: 1.7rem;
   }
 
-  .plotno,
+  .plotno {
+    width: 12.5rem;
+    height: auto;
+  }
   .doggy {
     width: 12rem;
     height: 14rem;
@@ -85,35 +100,96 @@ body {
   .pastel-style,
   .pozlacanie1-style,
   .fish-style {
-    width: 14rem;
-    height: 18rem;
+    width: 60%;
+    /* Adjust width for screens up to 1200px */
+    height: auto;
+    /* Keep height auto */
+  }
+
+  .segment-style {
+    margin: 0 0rem; /* Remove horizontal margin as columns get tighter */
+  }
+
+  .matdivider-style {
+    margin: 2rem 4rem; /* Keep some horizontal margin for dividers */
   }
 }
 
 @media (max-width: 992px) {
+ /* This is the key change for segment-style */
+  .segment-style {
+    height: auto; /* ALLOW HEIGHT TO ADJUST FOR STACKED CONTENT */
+    margin: 0; /* Reset margins for smaller screens */
+  }
+
+  .matdivider-style {
+    margin: 2rem 2rem; /* Keep some horizontal margin for dividers */
+  }
 
   .pastel-style,
   .pozlacanie1-style,
   .fish-style {
-    display: none !important;
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto; /* Center images */
   }
 }
 
 @media (max-width: 768px) {
+.segment-style {
+    height: auto; /* ALLOW HEIGHT TO ADJUST FOR STACKED CONTENT */
+    margin: 0; /* Reset margins for smaller screens */
+  }
+
+  .matdivider-style {
+    margin: 2rem 2rem; /* Keep some horizontal margin for dividers */
+  }
   .title {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: center;
     float: none;
   }
 
-  .plotno,
-  .doggy {
+  .pastel-style,
+  .pozlacanie1-style,
+  .fish-style {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .plotno {
+    /* Keep position: relative */
     width: 10.5rem;
     height: 12rem;
+    transform: rotate(-10deg);
+    /* Slightly less rotation for mobile */
+    margin-left: 1rem;
+    /* Adjust margin for stacking + slight offset */
+    margin-bottom: -5rem;
+    /* Pull it up to overlap the next image */
+    z-index: 2;
+    /* Ensure it stays on top */
   }
 
   .doggy {
+    /* Keep position: relative */
+    width: 10rem;
+    height: 10rem;
+    transform: rotate(10deg);
+    /* Slightly less rotation for mobile */
     margin-left: -3rem;
+    /* Push it right for offset */
+    z-index: 1;
+    /* Keep it behind plotno */
+  }
+
+  /* Adjustments for buttons on small screens */
+  .first-button {
+    margin: 2rem auto 5rem auto;
+    /* Center button and add bottom margin */
+    display: block;
+    /* Make it a block element to center with margin: auto */
   }
 }
 
@@ -158,11 +234,6 @@ body {
   text-decoration: none !important;
 }
 
-@media (max-width: 768px) {
-  .first-button {
-    margin: 2rem 0 5rem 2rem;
-  }
-}
 
 /* Segment and divider styles */
 .segment-style {
@@ -175,7 +246,6 @@ body {
 }
 
 @media (max-width: 1200px) {
-
   .segment-style {
     margin: 0 0rem;
   }
@@ -186,8 +256,9 @@ body {
 }
 
 @media (max-width: 768px) {
-
   .segment-style {
+    height: auto;
+    /* Allow height to adjust for stacked content */
     margin: 0;
   }
 
