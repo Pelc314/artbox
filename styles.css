@@ -89,6 +89,69 @@ body {
   /* Base size for larger screens */
 }
 
+.abstract1,
+.abstract2 {
+  width: 40.5rem;
+  height: 54rem;
+  opacity: 0.4;
+  float: right;
+  filter: brightness(2.5);
+}
+
+.abstract1 {
+  margin-right: -20%;
+}
+
+
+/* Footer styles */
+.footer-style {
+  background-color: #FCFBFB;
+  padding-top: 1rem;
+  height: fit-content;
+}
+
+/* Utility */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Button styles */
+.button,
+.first-button {
+  font-family: 'Red Rose', serif;
+  font-weight: 400;
+  cursor: pointer;
+  background-color: #FFEEA1;
+  border: none;
+  font-size: 22px;
+  width: 18rem;
+  height: 4rem;
+  margin: 2rem 0 0rem 0;
+  line-height: 2.8rem;
+}
+
+
+/* Remove blue link color from custom buttons */
+.button,
+.first-button,
+.button:visited,
+.first-button:visited {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+/* Make all custom buttons yellow on hover */
+.button:hover,
+.first-button:hover,
+.button:focus,
+.first-button:focus {
+  background-color: #ffe066 !important;
+  /* Bootstrap warning yellow */
+  color: #000 !important;
+  text-decoration: none !important;
+}
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
@@ -123,7 +186,7 @@ body {
   }
 
   .matdivider-style {
-    margin: 2rem 4rem;
+    margin: 2rem 2rem;
     /* Keep some horizontal margin for dividers */
   }
 }
@@ -213,47 +276,13 @@ body {
     display: block;
     /* Make it a block element to center with margin: auto */
   }
-}
 
-/* Button styles */
-.button,
-.first-button {
-  font-family: 'Red Rose', serif;
-  font-weight: 400;
-  cursor: pointer;
-  background-color: #FFEEA1;
-  border: none;
-  font-size: 22px;
-  width: 18rem;
-  height: 4rem;
-  margin: 2rem 0 0rem 0;
-  line-height: 2.8rem;
-}
-
-.button {
-  font-size: 20px;
-  width: 15.84rem;
-  height: 3.52rem;
-}
-
-/* Remove blue link color from custom buttons */
-.button,
-.first-button,
-.button:visited,
-.first-button:visited {
-  color: #000 !important;
-  text-decoration: none !important;
-}
-
-/* Make all custom buttons yellow on hover */
-.button:hover,
-.first-button:hover,
-.button:focus,
-.first-button:focus {
-  background-color: #ffe066 !important;
-  /* Bootstrap warning yellow */
-  color: #000 !important;
-  text-decoration: none !important;
+  .button {
+    margin: auto auto auto auto;
+    /* Center button and add bottom margin */
+    display: block;
+    /* Make it a block element to center with margin: auto */
+  }
 }
 
 @media (max-width: 768px) {
@@ -266,33 +295,4 @@ body {
   .matdivider-style {
     margin: 2rem 2rem;
   }
-}
-
-
-.abstract1,
-.abstract2 {
-  width: 40.5rem;
-  height: 54rem;
-  opacity: 0.4;
-  float: right;
-  filter: brightness(2.5);
-}
-
-.abstract1 {
-  margin-right: -20%;
-}
-
-
-/* Footer styles */
-.footer-style {
-  background-color: #FCFBFB;
-  padding-top: 1rem;
-  height: fit-content;
-}
-
-/* Utility */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
