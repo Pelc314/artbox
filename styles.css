@@ -49,18 +49,18 @@ body {
 .pastel-style {
   width: 16rem;
   height: 22rem;
-  margin: 0 6rem 0 8rem;
+  margin: 0 ;
 }
 .pozlacanie1-style {
   border-radius: 50%;
   height: 22rem;
   width: 20rem;
-  margin: 0 2rem 0 8rem;
+  margin: 0;
 }
 .fish-style {
   height: 20rem;
   width: 20rem;
-  margin: 0 2rem 0 8rem;
+  margin: 0;
 }
 .abstract1,
 .abstract2 {
@@ -121,7 +121,7 @@ body {
   margin: 0 6rem 0 6rem;
 }
 .matdivider-style, .bottom-matdivider-style {
-  margin: 2rem 14rem 2rem 14rem;
+  margin: 0rem 0rem 0rem 0rem;
 }
 @media (max-width: 1200px) {
   .segment-style, .inner-segment-style { margin: 0 2rem; }
