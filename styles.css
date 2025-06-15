@@ -32,16 +32,19 @@ body {
 /* Responsive image and segment styles */
 .plotno {
   position: relative;
-  z-index: 2;           /* Ensure plotno is above doggy */
+  z-index: 2;
+  /* Ensure plotno is above doggy */
   width: 14rem;
   height: 16rem;
   transform: rotate(-10deg);
-  margin-left: 4.5rem;  /* Move plotno right to overlap doggy */
+  margin-left: 4.5rem;
+  /* Move plotno right to overlap doggy */
 }
 
 .doggy {
   position: relative;
-  z-index: 1;           /* Lower z-index than plotno */
+  z-index: 1;
+  /* Lower z-index than plotno */
   width: 14rem;
   height: 16rem;
   margin-left: -4rem;
@@ -149,7 +152,8 @@ body {
 .first-button:hover,
 .button:focus,
 .first-button:focus {
-  background-color: #ffe066 !important; /* Bootstrap warning yellow */
+  background-color: #ffe066 !important;
+  /* Bootstrap warning yellow */
   color: #000 !important;
   text-decoration: none !important;
 }
@@ -191,6 +195,21 @@ body {
     margin: 2rem 2rem;
   }
 }
+
+
+.abstract1,
+.abstract2 {
+  width: 40.5rem;
+  height: 54rem;
+  opacity: 0.4;
+  float: right;
+  filter: brightness(2.5);
+}
+
+.abstract1 {
+  margin-right: -20%;
+}
+
 
 /* Footer styles */
 .footer-style {
