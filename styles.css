@@ -32,20 +32,20 @@ body {
 /* Responsive image and segment styles */
 .plotno {
   position: relative;
-  z-index: 1;
+  z-index: 2;           /* Ensure plotno is above doggy */
   width: 14rem;
   height: 16rem;
   transform: rotate(-10deg);
-  opacity: 0.7;
+  margin-left: 4.5rem;  /* Move plotno right to overlap doggy */
 }
 
 .doggy {
   position: relative;
+  z-index: 1;           /* Lower z-index than plotno */
   width: 14rem;
   height: 16rem;
   margin-left: -4rem;
   transform: rotate(10deg);
-  opacity: 0.7;
 }
 
 .pastel-style {
@@ -65,19 +65,6 @@ body {
   height: 20rem;
   width: 20rem;
   margin: 0;
-}
-
-.abstract1,
-.abstract2 {
-  width: 40.5rem;
-  height: 54rem;
-  opacity: 0.4;
-  float: right;
-  filter: brightness(2.5);
-}
-
-.abstract1 {
-  margin-right: -20%;
 }
 
 /* Responsive adjustments */
@@ -102,8 +89,6 @@ body {
 
 @media (max-width: 992px) {
 
-  .abstract1,
-  .abstract2,
   .pastel-style,
   .pozlacanie1-style,
   .fish-style {
@@ -181,38 +166,28 @@ body {
   margin: 0 4rem 0 4rem;
 }
 
-.inner-segment-style {
-  height: 15rem;
-  margin: 0 6rem 0 6rem;
-}
-
-.matdivider-style,
-.bottom-matdivider-style {
+.matdivider-style {
   margin: 0rem 0rem 0rem 0rem;
 }
 
 @media (max-width: 1200px) {
 
-  .segment-style,
-  .inner-segment-style {
+  .segment-style {
     margin: 0 0rem;
   }
 
-  .matdivider-style,
-  .bottom-matdivider-style {
+  .matdivider-style {
     margin: 2rem 4rem;
   }
 }
 
 @media (max-width: 768px) {
 
-  .segment-style,
-  .inner-segment-style {
+  .segment-style {
     margin: 0;
   }
 
-  .matdivider-style,
-  .bottom-matdivider-style {
+  .matdivider-style {
     margin: 2rem 2rem;
   }
 }
@@ -222,69 +197,6 @@ body {
   background-color: #FCFBFB;
   padding-top: 1rem;
   height: fit-content;
-}
-
-.table-style {
-  margin: 1rem 0 0 11.3rem;
-  height: fit-content;
-}
-
-.heading {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  padding-bottom: 0;
-}
-
-.text,
-.list-wspolprace p,
-.list-kontakt {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.adres {
-  padding-top: 1rem;
-}
-
-.list-kontakt {
-  width: 9rem;
-}
-
-.napisz-do-nas-style {
-  padding-right: 10rem;
-}
-
-@media (max-width: 768px) {
-  .list-kontakt {
-    width: 60%;
-  }
-
-  .napisz-do-nas-style {
-    padding-right: 2rem;
-  }
-}
-
-/* Hide/show for mobile/desktop cooperation lists */
-.list-wspolprace-mobile {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .list-wspolprace-mobile {
-    display: table-row;
-  }
-
-  .list-wspolprace-desktop {
-    display: none;
-  }
 }
 
 /* Utility */
