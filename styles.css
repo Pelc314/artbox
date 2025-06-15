@@ -159,10 +159,12 @@ body {
   text-decoration: none !important;
 }
 
+/* Make all custom buttons yellow on hover */
 .button:hover,
 .first-button:hover,
 .button:focus,
 .first-button:focus {
+  background-color: #ffe066 !important; /* Bootstrap warning yellow */
   color: #000 !important;
   text-decoration: none !important;
 }
