@@ -135,9 +135,13 @@ body {
   font-family: 'Red Rose', serif;
   font-weight: 400;
   cursor: pointer;
-  letter-spacing: 0.2px;
   background-color: #FFEEA1;
   border: none;
+  font-size: 22px;
+  width: 18rem;
+  height: 4rem;
+  margin: 2rem 0 0rem 0;
+  line-height: 2.8rem;
 }
 
 .button {
@@ -146,11 +150,21 @@ body {
   height: 3.52rem;
 }
 
-.first-button {
-  font-size: 24px;
-  width: 18rem;
-  height: 4rem;
-  margin: 2rem 0 10rem 0;
+/* Remove blue link color from custom buttons */
+.button,
+.first-button,
+.button:visited,
+.first-button:visited {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+.button:hover,
+.first-button:hover,
+.button:focus,
+.first-button:focus {
+  color: #000 !important;
+  text-decoration: none !important;
 }
 
 @media (max-width: 768px) {
@@ -162,7 +176,7 @@ body {
 /* Segment and divider styles */
 .segment-style {
   height: 20rem;
-  margin: 0 8rem 0 6rem;
+  margin: 0 4rem 0 4rem;
 }
 
 .inner-segment-style {
@@ -179,7 +193,7 @@ body {
 
   .segment-style,
   .inner-segment-style {
-    margin: 0 2rem;
+    margin: 0 0rem;
   }
 
   .matdivider-style,
