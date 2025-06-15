@@ -7,6 +7,16 @@ body {
   background: #fff;
 }
 
+/* Segment and divider styles */
+.segment-style {
+  height: auto;
+  margin: 0 4rem 0 4rem;
+}
+
+.matdivider-style {
+  margin: 0rem 0rem 0rem 0rem;
+}
+
 /* Titles and headings */
 .title {
   font-family: 'Bodoni Moda', serif;
@@ -92,6 +102,7 @@ body {
     width: 12.5rem;
     height: auto;
   }
+
   .doggy {
     width: 12rem;
     height: 14rem;
@@ -107,23 +118,29 @@ body {
   }
 
   .segment-style {
-    margin: 0 0rem; /* Remove horizontal margin as columns get tighter */
+    margin: 0 0rem;
+    /* Remove horizontal margin as columns get tighter */
   }
 
   .matdivider-style {
-    margin: 2rem 4rem; /* Keep some horizontal margin for dividers */
+    margin: 2rem 4rem;
+    /* Keep some horizontal margin for dividers */
   }
 }
 
 @media (max-width: 992px) {
- /* This is the key change for segment-style */
+
+  /* This is the key change for segment-style */
   .segment-style {
-    height: auto; /* ALLOW HEIGHT TO ADJUST FOR STACKED CONTENT */
-    margin: 0; /* Reset margins for smaller screens */
+    height: auto;
+    /* ALLOW HEIGHT TO ADJUST FOR STACKED CONTENT */
+    margin: 0;
+    /* Reset margins for smaller screens */
   }
 
   .matdivider-style {
-    margin: 2rem 2rem; /* Keep some horizontal margin for dividers */
+    margin: 2rem 2rem;
+    /* Keep some horizontal margin for dividers */
   }
 
   .pastel-style,
@@ -131,19 +148,24 @@ body {
   .fish-style {
     max-width: 70%;
     height: auto;
-    margin: 0 auto; /* Center images */
+    margin: 0 auto;
+    /* Center images */
   }
 }
 
 @media (max-width: 768px) {
-.segment-style {
-    height: auto; /* ALLOW HEIGHT TO ADJUST FOR STACKED CONTENT */
-    margin: 0; /* Reset margins for smaller screens */
+  .segment-style {
+    height: auto;
+    /* ALLOW HEIGHT TO ADJUST FOR STACKED CONTENT */
+    margin: 0;
+    /* Reset margins for smaller screens */
   }
 
   .matdivider-style {
-    margin: 2rem 2rem; /* Keep some horizontal margin for dividers */
+    margin: 2rem 2rem;
+    /* Keep some horizontal margin for dividers */
   }
+
   .title {
     font-size: 1.5rem;
     text-align: center;
@@ -232,27 +254,6 @@ body {
   /* Bootstrap warning yellow */
   color: #000 !important;
   text-decoration: none !important;
-}
-
-
-/* Segment and divider styles */
-.segment-style {
-  height: 20rem;
-  margin: 0 4rem 0 4rem;
-}
-
-.matdivider-style {
-  margin: 0rem 0rem 0rem 0rem;
-}
-
-@media (max-width: 1200px) {
-  .segment-style {
-    margin: 0 0rem;
-  }
-
-  .matdivider-style {
-    margin: 2rem 4rem;
-  }
 }
 
 @media (max-width: 768px) {
