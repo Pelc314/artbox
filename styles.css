@@ -1,0 +1,375 @@
+/* --- Artbox Custom Styles (from Angular SCSS) --- */
+
+/* Typography and base */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+}
+
+/* Segment and divider styles */
+.segment-style {
+  height: auto;
+  margin: 0 4rem 0 4rem;
+}
+
+/* Titles and headings */
+.title {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #000;
+}
+
+/* Titles and headings */
+.title-footer {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #000;
+}
+
+.section-title {
+  font-family: 'Red Rose', serif;
+  font-size: 2rem;
+}
+
+/* Responsive image and segment styles */
+.plotno {
+  position: relative;
+  z-index: 2;
+  /* Ensure plotno is above doggy */
+  width: 14.5rem;
+  height: auto;
+  transform: rotate(-10deg);
+  margin-left: 4.5rem;
+  /* Move plotno right to overlap doggy */
+}
+
+.doggy {
+  position: relative;
+  z-index: 1;
+  /* Lower z-index than plotno */
+  width: 14rem;
+  height: 16rem;
+  margin-left: -4rem;
+  transform: rotate(10deg);
+}
+
+.pastel-style,
+.pozlacanie1-style,
+.fish-style {
+  /* Use max-width and height: auto to ensure responsiveness */
+  max-width: 100%;
+  /* Allows images to scale down */
+  height: auto;
+  /* Maintains aspect ratio */
+  margin: 0;
+  display: block;
+}
+
+.pastel-style {
+  width: 16rem;
+  /* Base size for larger screens */
+}
+
+.pozlacanie1-style {
+  border-radius: 50%;
+  width: 20rem;
+  /* Base size for larger screens */
+}
+
+.fish-style {
+  width: 20rem;
+  /* Base size for larger screens */
+}
+
+.abstract1,
+.abstract2 {
+  width: 40.5rem;
+  height: 54rem;
+  opacity: 0.4;
+  float: right;
+  filter: brightness(2.5);
+}
+
+.abstract1 {
+  margin-right: -20%;
+}
+
+
+/* Footer styles */
+.footer-style {
+  background-color: #FCFBFB;
+  padding-top: 1rem;
+  height: fit-content;
+}
+
+/* Utility */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Button styles */
+.button,
+.first-button {
+  font-family: 'Red Rose', serif;
+  font-weight: 400;
+  cursor: pointer;
+  background-color: #FFEEA1;
+  border: none;
+  font-size: 22px;
+  width: 18rem;
+  height: 4rem;
+  margin: 2rem 0 0rem 0;
+  line-height: 2.8rem;
+}
+
+
+/* Remove blue link color from custom buttons */
+.button,
+.first-button,
+.button:visited,
+.first-button:visited {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+/* Make all custom buttons yellow on hover */
+.button:hover,
+.first-button:hover,
+.button:focus,
+.first-button:focus {
+  background-color: #ffe066 !important;
+  /* Bootstrap warning yellow */
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+
+  /* ... (previous adjustments for title, plotno/doggy width/height, pastel/pozlacanie/fish) ... */
+  .title {
+    font-size: 1.7rem;
+  }
+
+  .plotno {
+    width: 12.5rem;
+    height: auto;
+  }
+
+  .doggy {
+    width: 12rem;
+    height: 14rem;
+  }
+
+  .pastel-style,
+  .pozlacanie1-style,
+  .fish-style {
+    width: 60%;
+    /* Adjust width for screens up to 1200px */
+    height: auto;
+    /* Keep height auto */
+  }
+
+  .segment-style {
+    margin: 0 0rem;
+    /* Remove horizontal margin as columns get tighter */
+  }
+
+  .matdivider-style {
+    margin: 2rem 2rem;
+    /* Keep some horizontal margin for dividers */
+  }
+}
+
+@media (max-width: 992px) {
+
+  /* This is the key change for segment-style */
+  .segment-style {
+    height: auto;
+    /* ALLOW HEIGHT TO ADJUST FOR STACKED CONTENT */
+    margin: 0;
+    /* Reset margins for smaller screens */
+  }
+
+  .matdivider-style {
+    margin: 2rem 2rem;
+    /* Keep some horizontal margin for dividers */
+  }
+
+  .pastel-style,
+  .pozlacanie1-style,
+  .fish-style {
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+    /* Center images */
+  }
+}
+
+@media (max-width: 768px) {
+  .segment-style {
+    height: auto;
+    /* ALLOW HEIGHT TO ADJUST FOR STACKED CONTENT */
+    margin: 0;
+    /* Reset margins for smaller screens */
+  }
+
+  .matdivider-style {
+    margin: 2rem 2rem;
+    /* Keep some horizontal margin for dividers */
+  }
+
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+    float: none;
+  }
+
+  .pastel-style,
+  .pozlacanie1-style,
+  .fish-style {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .plotno {
+    /* Keep position: relative */
+    width: 10.5rem;
+    height: 12rem;
+    transform: rotate(-10deg);
+    /* Slightly less rotation for mobile */
+    margin-left: 1rem;
+    /* Adjust margin for stacking + slight offset */
+    margin-bottom: -5rem;
+    /* Pull it up to overlap the next image */
+    z-index: 2;
+    /* Ensure it stays on top */
+  }
+
+  .doggy {
+    /* Keep position: relative */
+    width: 10rem;
+    height: 10rem;
+    transform: rotate(10deg);
+    /* Slightly less rotation for mobile */
+    margin-left: -3rem;
+    /* Push it right for offset */
+    z-index: 1;
+    /* Keep it behind plotno */
+  }
+
+  /* Adjustments for buttons on small screens */
+  .first-button {
+    margin: 2rem auto 5rem auto;
+    /* Center button and add bottom margin */
+    display: block;
+    /* Make it a block element to center with margin: auto */
+  }
+
+  .button {
+    margin: auto auto auto auto;
+    /* Center button and add bottom margin */
+    display: block;
+    /* Make it a block element to center with margin: auto */
+  }
+}
+
+@media (max-width: 768px) {
+  .segment-style {
+    height: auto;
+    /* Allow height to adjust for stacked content */
+    margin: 0;
+  }
+
+  .matdivider-style {
+    margin: 2rem 2rem;
+  }
+}
+
+.modal-header {
+  background-color: #FFEEA1;
+  border-bottom: none;
+}
+
+.modal-title {
+  font-family: 'Red Rose', serif;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.modal-body {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #000;
+}
+
+.modal-footer .btn-primary {
+  font-family: 'Red Rose', serif;
+  background-color: #FFEEA1;
+  border: none;
+  color: #000;
+  font-size: 18px;
+  padding: 0.5rem 2rem;
+}
+
+.modal-footer .btn-primary:hover {
+  background-color: #ffe066;
+  color: #000;
+}
+
+.modal-footer .btn-secondary {
+  font-family: 'Red Rose', serif;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  color: #000;
+  font-size: 18px;
+  padding: 0.5rem 2rem;
+}
+
+/* Responsive adjustments from your CSS */
+@media (max-width: 1200px) {
+  .segment-style {
+    margin: 0 0rem;
+  }
+
+  .pastel-style {
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .segment-style {
+    height: auto;
+    margin: 0;
+  }
+
+  .pastel-style {
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .segment-style {
+    height: auto;
+    margin: 0;
+  }
+
+  .pastel-style {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .button {
+    margin: auto auto auto auto;
+    display: block;
+  }
+}

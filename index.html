@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Artbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand title" href="#">artbox</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#oprawy">Artystyczne oprawy obrazów</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pozlotnicze">Usługi pozłotnicze</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#wernisaze">Wernisaże</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+      <!-- Artystyczne zlecenia i usługi Section -->
+      <section class="mb-5">
+        <div class="row">
+          <div class="col-12 col-lg-6 mb-4">
+            <h1 class="section-title mb-3">
+              Artystyczne zlecenia i usługi. Tworzone z pasją.
+            </h1>
+            <a
+              href="#oferta"
+              class="btn btn-warning btn-lg mb-4 first-button"
+              data-bs-toggle="modal"
+              data-bs-target="#ofertaModal"
+              >Sprawdź naszą ofertę</a
+            >
+            <div
+              class="d-flex flex-wrap align-items-end mt-3 justify-content-center justify-content-lg-start"
+              style="gap: 1rem"
+            >
+              <img
+                src="./assets/plotno.jpg"
+                class="img-fluid rounded shadow plotno mb-3"
+                alt="plotno"
+                style="max-width: 100%; height: auto"
+              />
+              <img
+                src="./assets/haft_doggy.jpg"
+                class="img-fluid rounded shadow doggy mb-3"
+                alt="doggy"
+                style="max-width: 100%; height: auto"
+              />
+            </div>
+          </div>
+          <div
+            class="col-lg-6 d-none d-lg-flex align-items-stretch justify-content-end position-relative p-0"
+          >
+            <div style="position: relative; width: 100%; height: 100%">
+              <img
+                src="./assets/abstract1.png"
+                class="abstract1"
+                alt="abstract1"
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 90%;
+                  height: 100%;
+                  object-fit: cover;
+                  opacity: 0.5;
+                  filter: brightness(2.5);
+                  z-index: 2;
+                "
+              />
+              <img
+                src="./assets/abstract2.png"
+                class="abstract2"
+                alt="abstract2"
+                style="
+                  position: absolute;
+                  top: 0%;
+                  left: 15%;
+                  width: 90%;
+                  height: 100%;
+                  object-fit: cover;
+                  opacity: 0.5;
+                  filter: brightness(2.5);
+                  z-index: 1;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Oferta Modal -->
+      <div
+        class="modal fade"
+        id="ofertaModal"
+        tabindex="-1"
+        aria-labelledby="oprawyModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="oprawyModalLabel">
+                Skontaktuj się z nami!
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="./assets/artbox_logo.jpg"
+                class="img-fluid rounded shadow mb-3 mx-auto d-block"
+                alt="artbox logo"
+                style="max-width: 80%; height: auto"
+              />
+              <h5>
+                Napisz lub zadzwoń do nas, aby dowiedzieć się więcej o naszych
+                usługach.
+              </h5>
+              <p>
+                <strong>Artbox</strong> to firma z wieloletnim doświadczeniem w
+                branży artystycznej. Specjalizujemy się w artystycznych oprawach
+                obrazów, usługach pozłotniczych oraz organizacji wernisaży.
+              </p>
+
+              <p><strong>Adres:</strong> ul. Sempołowskiej 5, 51-660 Wrocław</p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.5!2d17.0385!3d51.1079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc27f9c0c0c0d%3A0x0!2sul.%20Sempo%C5%82owskiej%205%2C%2051-660%20Wroc%C5%82aw!5e0!3m2!1sen!2spl!4v1234567890"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+
+              <p>
+                <br />
+                Adres email:
+                <a href="mailto:biuro@artbox.com.pl">biuro@artbox.com.pl</a>
+              </p>
+              <p>
+                Telefony kontaktowe: <br />
+                <a href="tel:+48604912792">+48 604 912 792</a>
+              </p>
+              <a href="tel:0713452222">(0 71) 345 22 22</a>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Zamknij
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <hr class="my-5" />
+
+      <!-- Oprawy Section -->
+      <section id="oprawy" class="mb-5">
+        <div class="row align-items-center segment-style">
+          <div class="col-12 col-lg-6 mb-4 text-center text-lg-start">
+            <img
+              src="./assets/pastel.jpg"
+              class="img-fluid rounded shadow pastel-style"
+              alt="pastel"
+              style="max-width: 100%; height: auto"
+            />
+          </div>
+          <div class="col-12 col-lg-6">
+            <h2 class="section-title">Artystyczne oprawy obrazów</h2>
+            <p class="segment-body">
+              Obrazy olejne, grafiki, akwarele, pastele, hafty, zdjęcia, lustra
+              i wiele innych.
+            </p>
+            <a
+              href="#"
+              class="btn btn-outline-primary button"
+              data-bs-toggle="modal"
+              data-bs-target="#oprawyModal"
+              >Sprawdź więcej</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="oprawyModal"
+        tabindex="-1"
+        aria-labelledby="oprawyModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="oprawyModalLabel">
+                Artystyczne oprawy obrazów
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h5>
+                Oprawiamy artystycznie obrazy olejne, grafiki, akwarele,
+                pastele, hafty, zdjęcia, lustra i inne.
+              </h5>
+              <h6>Pastele</h6>
+              <img
+                src="./assets/pastel.jpg"
+                class="img-fluid rounded shadow mb-3 mx-auto d-block"
+                alt="ramy"
+                style="max-width: 80%; height: auto"
+              />
+              <h6>Obrazy olejne</h6>
+              <img
+                src="./assets/frames/spiaca.jpg"
+                class="img-fluid rounded shadow mb-3 mx-auto d-block"
+                alt="ramy"
+                style="max-width: 80%; height: auto"
+              />
+              <img
+                src="./assets/plotno.jpg"
+                class="img-fluid rounded shadow mb-3 mx-auto d-block"
+                alt="ramy"
+                style="max-width: 80%; height: auto"
+              />
+              <h6>Grafiki</h6>
+              <img
+                src="./assets/frames/noc_w_kabarecie.jpg"
+                class="img-fluid rounded shadow mb-3 mx-auto d-block"
+                alt="ramy"
+                style="max-width: 80%; height: auto"
+              />
+              <img
+                src="./assets/frames/grafika2.jpg"
+                class="img-fluid rounded shadow mb-3 mx-auto d-block"
+                alt="ramy"
+                style="max-width: 80%; height: auto"
+              />
+              <img
+                src="./assets/frames/grafika3.jpg"
+                class="img-fluid rounded shadow mb-3 mx-auto d-block"
+                alt="ramy"
+                style="max-width: 80%; height: auto"
+              />
+              <h6>Zdjęcia</h6>
+              <img
+                src="./assets/frames/zdjecie1.jpg"
+                class="img-fluid rounded shadow mb-3 mx-auto d-block"
+                alt="ramy"
+                style="max-width: 80%; height: auto"
+              />
+              <h6>Hafty</h6>
+              <img
+                src="./assets/haft_doggy.jpg"
+                class="img-fluid rounded shadow mb-3 mx-auto d-block"
+                alt="ramy"
+                style="max-width: 80%; height: auto"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Zamknij
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#ofertaModal"
+              >
+                Skontaktuj się
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <section id="pozlotnicze" class="mb-5">
+        <div class="row align-items-center segment-style">
+          <div class="col-12 col-lg-6 mb-4 text-center text-lg-start">
+            <img
+              src="./assets/pozlacanie1.jpg"
+              class="img-fluid rounded shadow pozlacanie1-style me-lg-5"
+              alt="pozlacanie1"
+              style="max-width: 100%; height: auto"
+            />
+          </div>
+          <div class="col-12 col-lg-6">
+            <h2 class="section-title">Usługi pozłotnicze</h2>
+            <p class="segment-body">
+              Pełen zakres usług - w tym naprawa starych złoceń na ramach,
+              rzeźbach i meblach.
+            </p>
+            <a
+              href="#"
+              class="btn btn-outline-primary button"
+              data-bs-toggle="modal"
+              data-bs-target="#pozlotniczeModal"
+              >Sprawdź więcej</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="modal fade"
+        id="pozlotniczeModal"
+        tabindex="-1"
+        aria-labelledby="oprawyModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="oprawyModalLabel">
+                Usługi pozłotnicze
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h5>
+                Oferujemy usługi pozłotnicze w pełnym zakresie. Naprawiamy stare
+                złocenia na ramach, rzeźbach, meblach.
+              </h5>
+              <h6>
+                Powlekanie złotem chorągwii, które zostały umieszczone na dachu
+                Zakładu Narodowego im. Ossolińskich we Wrocławiu.
+              </h6>
+              <img
+                src="./assets/gilding/pozlacanie1.jpg"
+                class="img-fluid rounded shadow mb-3 mx-auto d-block"
+                alt="ramy"
+                style="max-width: 80%; height: auto"
+              />
+              <h6>Pokrywanie złotem ozdobnych części fortepianu.</h6>
+              <img
+                src="./assets/gilding/pozlacanie4.jpg"
+                class="img-fluid rounded shadow mb-3 mx-auto d-block"
+                alt="ramy"
+                style="max-width: 80%; height: auto"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Zamknij
+              </button>
+              <button type="button" class="btn btn-primary">
+                Skontaktuj się
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <section id="wernisaze" class="mb-5">
+        <div class="row align-items-center segment-style">
+          <div class="col-12 col-lg-6 mb-4 text-center text-lg-start">
+            <img
+              src="./assets/fish.jpg"
+              class="img-fluid rounded shadow fish-style me-lg-5"
+              alt="fish"
+              style="max-width: 100%; height: auto"
+            />
+          </div>
+          <div class="col-12 col-lg-6">
+            <h2 class="section-title">Wernisaże</h2>
+            <p class="segment-body">
+              Wystawy dla galerii i indywidualnych artystów.
+            </p>
+            <a
+              href="#"
+              class="btn btn-outline-primary button"
+              data-bs-toggle="modal"
+              data-bs-target="#wernisazeModal"
+              >Sprawdź więcej</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="modal fade"
+      id="wernisazeModal"
+      tabindex="-1"
+      aria-labelledby="oprawyModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="oprawyModalLabel">Wernisaże</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h5>Oprawiamy wystawy dla galerii i indywidualnych artystów.</h5>
+            <h6>Wernisaż wystawy malarstwa. Anny Marii Kram - "Fish"</h6>
+            <img
+              src="./assets/fish.jpg"
+              class="img-fluid rounded shadow mb-3 mx-auto d-block"
+              alt="ramy"
+              style="max-width: 80%; height: auto"
+            />
+            <img
+              src="./assets/openings/wer1a.jpg"
+              class="img-fluid rounded shadow mb-3 mx-auto d-block"
+              alt="ramy"
+              style="max-width: 80%; height: auto"
+            />
+            <img
+              src="./assets/openings/wer1b.jpg"
+              class="img-fluid rounded shadow mb-3 mx-auto d-block"
+              alt="ramy"
+              style="max-width: 80%; height: auto"
+            />
+            <img
+              src="./assets/openings/wer1c.jpg"
+              class="img-fluid rounded shadow mb-3 mx-auto d-block"
+              alt="ramy"
+              style="max-width: 80%; height: auto"
+            />
+            <img
+              src="./assets/openings/wer1d.jpg"
+              class="img-fluid rounded shadow mb-3 mx-auto d-block"
+              alt="ramy"
+              style="max-width: 80%; height: auto"
+            />
+            <h6>Wernisaż wystawy malarstwa - "Kartka z Kalendarza"</h6>
+            <img
+              src="./assets/openings/wer2a.jpg"
+              class="img-fluid rounded shadow mb-3 mx-auto d-block"
+              alt="ramy"
+              style="max-width: 80%; height: auto"
+            />
+            <img
+              src="./assets/openings/wer2b.jpg"
+              class="img-fluid rounded shadow mb-3 mx-auto d-block"
+              alt="ramy"
+              style="max-width: 80%; height: auto"
+            />
+            <img
+              src="./assets/openings/wer2c.jpg"
+              class="img-fluid rounded shadow mb-3 mx-auto d-block"
+              alt="ramy"
+              style="max-width: 80%; height: auto"
+            />
+            <img
+              src="./assets/openings/wer2d.jpg"
+              class="img-fluid rounded shadow mb-3 mx-auto d-block"
+              alt="ramy"
+              style="max-width: 80%; height: auto"
+            />
+            <img
+              src="./assets/openings/wer2e.jpg"
+              class="img-fluid rounded shadow mb-3 mx-auto d-block"
+              alt="ramy"
+              style="max-width: 80%; height: auto"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Zamknij
+            </button>
+            <button type="button" class="btn btn-primary">
+              Skontaktuj się
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4" id="kontakt">
+      <div class="container">
+        <div class="row">
+          <h5 class="title-footer">artbox</h5>
+          <h5 class="title-footer"></h5>
+          <div class="col-md-4 mb-3">
+            <p>ul. Sempołowskiej 5<br />51-660 Wrocław</p>
+            <a
+              href="https://www.google.com/maps?q=Artbox.+Dudkowska+K."
+              target="_blank"
+              class="btn btn-link p-0 d-inline-flex align-items-center"
+            >
+              <img
+                src="./assets/open_maps.png"
+                alt="maps icon"
+                style="
+                  width: 1.1rem;
+                  margin-right: 0.4rem;
+                  vertical-align: middle;
+                "
+              />
+              Pokaż na mapie
+            </a>
+            <p class="mt-3 mb-0">&copy; 2025 artbox</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h6>Napisz do nas:</h6>
+            <p><a href="mailto:biuro@artbox.com.pl">biuro@artbox.com.pl</a></p>
+            <p>Lub zadzwoń:</p>
+            <p><a href="tel:+48604912792">+48 604 912 792</a></p>
+            <p><a href="tel:0713452222">(0 71) 345 22 22</a></p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h6>Współprace</h6>
+            <p>
+              "Galeria M"<br />Stare Jatki 10<br />Wrocław 50-111<br />tel. (0
+              71) 341 72 82<br /><a
+                href="http://www.galeriam.com"
+                target="_blank"
+                >www.galeriam.com</a
+              >
+            </p>
+            <p>
+              "Galeria M Odwach"<br />Świdnicka 38A<br />Wrocław 50-068<br />tel.
+              (0 71) 372 44 96<br /><a
+                href="https://www.gallerystore.pl/item/214/24/Galerie-i-Muzea/Galerie-i-muzea-w-Polsce/Galeria-M-Odwach.html"
+                target="_blank"
+                >www.galeria.com</a
+              >
+            </p>
+            <p>
+              "Galeria Opus"<br />Kościuszki 16<br />Wrocław 50-027<br />tel. (0
+              71) 344 76 61
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
