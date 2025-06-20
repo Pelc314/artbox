@@ -70,7 +70,9 @@
               Artystyczne zlecenia i usługi. Tworzone z pasją.
             </h1>
             <a href="#oferta"
-              class="btn btn-warning btn-lg mb-4 first-button">Sprawdź naszą ofertę</a>
+              class="btn btn-warning btn-lg mb-4 first-button"
+                            data-bs-toggle="modal"
+              data-bs-target="#oprawyModal">Sprawdź naszą ofertę</a>
             <div class="d-flex flex-wrap align-items-end mt-3 justify-content-center justify-content-lg-start"
               style="gap: 1rem">
               <img src="./assets/plotno.jpg"
@@ -117,8 +119,77 @@
           </div>
         </div>
       </section>
+
+      <div class="modal fade"
+        id="ofertaModal"
+        tabindex="-1"
+        aria-labelledby="oprawyModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"
+                id="oprawyModalLabel">Skontaktuj się z nami!</h5>
+              <button type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Oprawiamy artystycznie obrazy olejne, grafiki, akwarele, pastele, hafty, zdjęcia, lustra i inne.</p>
+              <ul>
+                <li>Pastele</li>
+                <img src="./assets/pastel.jpg"
+                  class="img-fluid rounded shadow mb-3"
+                  alt="ramy"
+                  style="max-width: 80%; height: auto;" />
+                <li>Obrazy olejne</li>
+                <img src="./assets/frames/spiaca.jpg"
+                  class="img-fluid rounded shadow mb-3"
+                  alt="ramy"
+                  style="max-width: 80%; height: auto;" />
+                <img src="./assets/plotno.jpg"
+                  class="img-fluid rounded shadow mb-3"
+                  alt="ramy"
+                  style="max-width: 80%; height: auto;" />
+                <li>Grafiki</li>
+                <img src="./assets/frames/noc_w_kabarecie.jpg"
+                  class="img-fluid rounded shadow mb-3"
+                  alt="ramy"
+                  style="max-width: 80%; height: auto;" />
+                <img src="./assets/frames/grafika2.jpg"
+                  class="img-fluid rounded shadow mb-3"
+                  alt="ramy"
+                  style="max-width: 80%; height: auto;" />
+                <img src="./assets/frames/grafika3.jpg"
+                  class="img-fluid rounded shadow mb-3"
+                  alt="ramy"
+                  style="max-width: 80%; height: auto;" />
+                <li>Zdjęcia</li>
+                <img src="./assets/frames/zdjecie1.jpg"
+                  class="img-fluid rounded shadow mb-3"
+                  alt="ramy"
+                  style="max-width: 80%; height: auto;" />
+                <li>Hafty</li>
+                <img src="./assets/haft_doggy.jpg"
+                  class="img-fluid rounded shadow mb-3"
+                  alt="ramy"
+                  style="max-width: 80%; height: auto;" />
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal">Zamknij</button>
+              <button type="button"
+                class="btn btn-primary">Skontaktuj się</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Divider -->
-      <hr class="matdivider-style my-5" />
+      <hr class="my-5" />
 
       <!-- Oprawy Section -->
       <section id="oprawy"
@@ -213,7 +284,7 @@
         </div>
       </div>
 
-      <hr class="matdivider-style my-5" />
+      <hr class="my-5" />
 
       <section id="pozlotnicze"
         class="mb-5">
@@ -281,7 +352,7 @@
         </div>
       </div>
 
-      <hr class="matdivider-style my-5" />
+      <hr class="my-5" />
 
       <section id="wernisaze"
         class="mb-5">
