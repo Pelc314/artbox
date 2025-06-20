@@ -60,7 +60,7 @@
 
     <!-- Main Content -->
     <main class="container my-5">
-      <!-- Hero Section -->
+      <!-- Artystyczne zlecenia i usługi Section -->
       <section class="mb-5">
         <div class="row">
           <div class="col-12 col-lg-6 mb-4">
@@ -148,12 +148,38 @@
               Obrazy olejne, grafiki, akwarele, pastele, hafty, zdjęcia, lustra
               i wiele innych.
             </p>
-            <a href="#" class="btn btn-outline-primary button"
+            <a href="#" class="btn btn-outline-primary button" data-bs-toggle="modal" data-bs-target="#oprawyModal"
               >Sprawdź więcej</a
             >
           </div>
         </div>
       </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="oprawyModal" tabindex="-1" aria-labelledby="oprawyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="oprawyModalLabel">Artystyczne oprawy obrazów</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Oprawiamy artystycznie obrazy olejne, grafiki, akwarele, pastele, hafty, zdjęcia, lustra i inne.</p>
+                    <ul>
+                        <li>Pastele</li>
+                        <img src="./assets/pastel.jpg" class="img-fluid rounded shadow mb-3" alt="ramy" style="max-width: 100%; height: auto;" />
+                        <li>Materiały używane</li>
+                        <li>Czas realizacji</li>
+                        <li>Ceny</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+                    <button type="button" class="btn btn-primary">Skontaktuj się</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
       <hr class="matdivider-style my-5" />
 
